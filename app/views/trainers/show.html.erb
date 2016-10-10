@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @trainer.pname %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @trainer.level %>
+</p>
+
+<div class="aLink"><%= link_to 'Edit', edit_trainer_path(@trainer) %> |
+<%= link_to 'Back', trainers_path %></div>

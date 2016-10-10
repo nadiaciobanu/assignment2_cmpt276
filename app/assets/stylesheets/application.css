@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+ th, td {
+   padding: 15px;
+   border: 1px solid black;
+ }
+
+ table, h1, div, p {
+   margin: 2%;
+ }
+
+ table {
+   background-color: white;
+ }
+
+ .aLink {
+   font-size: 20px;
+ }
+
+ body {
+   background-color: #B7FEDF;
+ }

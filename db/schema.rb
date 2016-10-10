@@ -11,12 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140707111715) do
+ActiveRecord::Schema.define(version: 20161010212552) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "widgets", force: true do |t|
+  create_table "tokimons", force: :cascade do |t|
+    t.string   "tname"
+    t.float    "weight"
+    t.float    "height"
+    t.integer  "fly"
+    t.integer  "fight"
+    t.integer  "fire"
+    t.integer  "water"
+    t.integer  "electric"
+    t.integer  "ice"
+    t.integer  "total"
+    t.integer  "trainer_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "trainers", force: :cascade do |t|
+    t.string   "pname"
+    t.integer  "level"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "widgets", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
     t.integer  "stock"

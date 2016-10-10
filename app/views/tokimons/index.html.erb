@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Registered Tokimons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name </th>
+      <th>Weight </th>
+      <th>Height </th>
+      <th>Flying Ability</th>
+      <th>Fighting Ability</th>
+      <th>Fire Ability</th>
+      <th>Water Ability</th>
+      <th>Electric Ability</th>
+      <th>Freeze Ability</th>
+      <th>Total Ability</th>
+      <th>Trainer ID</th>
+      <th colspan="3">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tokimons.each do |tokimon| %>
+      <tr>
+        <td><%= tokimon.tname %></td>
+        <td><%= tokimon.weight %></td>
+        <td><%= tokimon.height %></td>
+        <td><%= tokimon.fly %></td>
+        <td><%= tokimon.fight %></td>
+        <td><%= tokimon.fire %></td>
+        <td><%= tokimon.water %></td>
+        <td><%= tokimon.electric %></td>
+        <td><%= tokimon.ice %></td>
+        <td><%= tokimon.total %></td>
+        <td><%= tokimon.trainer_id %></td>
+        <td><%= link_to 'Show', tokimon %></td>
+        <td><%= link_to 'Edit', edit_tokimon_path(tokimon) %></td>
+        <td><%= link_to 'Destroy', tokimon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<div class="aLink"><%= link_to 'New Tokimon', new_tokimon_path%></div>
