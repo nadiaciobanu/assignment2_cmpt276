@@ -1,4 +1,4 @@
-$brand-primary: #532F8C;
+$brand-primary: #B7FEDF;
 $brand-language: #B01302;
 
 .jumbotron {
@@ -20,17 +20,17 @@ $brand-language: #B01302;
     margin: 1em auto 2em;
   }
 
-  .navbar + & {
-    margin-top: -20px;
-  }
+  // .navbar + & {
+  //   margin-top: -20px;
+  // }
 
   .lang-logo {
     display: block;
-    background: $brand-language;
-    border-radius: 50%;
+    background: white;
+    //border-radius: 50%;
     overflow: hidden;
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 300px;
     margin: auto;
     border: 2px solid white;
     img {
