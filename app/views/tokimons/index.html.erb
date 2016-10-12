@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Tokimon Name</th>
       <th>Weight</th>
       <th>Height</th>
       <th>Flying Ability</th>
@@ -15,7 +15,7 @@
       <th>Electric Ability</th>
       <th>Ice Ability</th>
       <th>Total Ability</th>
-      <th>Trainer ID</th>
+      <th>Trainer Name</th>
       <th colspan="3">Actions</th>
     </tr>
   </thead>
@@ -33,7 +33,7 @@
         <td><%= tokimon.electric %></td>
         <td><%= tokimon.ice %></td>
         <td><%= tokimon.total %></td>
-        <td><%= tokimon.trainer_id %></td>
+        <td><%= link_to (Trainer.find(tokimon.trainer_id)).pname, Trainer.find(tokimon.trainer_id) %></td>
         <td><%= link_to 'Show', tokimon %></td>
         <td><%= link_to 'Edit', edit_tokimon_path(tokimon) %></td>
         <td><%= link_to 'Destroy', tokimon, method: :delete, data: { confirm: 'Are you sure?' } %></td>

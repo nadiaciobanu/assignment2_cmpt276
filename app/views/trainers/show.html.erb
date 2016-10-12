@@ -1,6 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<h1>Displaying Trainer</h1>
+<h2><%=@trainer.pname %></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Trainer Name</th>
+      <th>Level</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @trainer.pname %></td>
+        <td><%= @trainer.level %></td>
+      </tr>
+  </tbody>
+</table>
+
+<!-- <p>
   <strong>Name:</strong>
   <%= @trainer.pname %>
 </p>
@@ -8,7 +27,7 @@
 <p>
   <strong>Level:</strong>
   <%= @trainer.level %>
-</p>
+</p> -->
 
 <div class="aLink"><%= link_to 'Edit', edit_trainer_path(@trainer) %> |
 <%= link_to 'Back', trainers_path %></div>

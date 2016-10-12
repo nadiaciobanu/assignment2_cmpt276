@@ -47,13 +47,13 @@
     <%= f.label :ice %><br>
     <%= f.number_field :ice %>
   </div>
-  <div class="field">
+  <!-- <div class="field">
     <%= f.label :total %><br>
     <%= f.number_field :total %>
-  </div>
+  </div> -->
   <div class="field">
     <%= f.label :trainer_id %><br>
-    <%= f.number_field :trainer_id %>
+    <%= collection_select(:tokimon, :trainer_id, Trainer.all, :id, :pname, prompt:true) %>
   </div>
   <div class="actions">
     <%= f.submit %>

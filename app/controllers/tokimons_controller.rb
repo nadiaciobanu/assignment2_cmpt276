@@ -10,6 +10,7 @@ class TokimonsController < ApplicationController
   # GET /tokimons/1
   # GET /tokimons/1.json
   def show
+    @trainer = Trainer.find(@tokimon.trainer_id)
   end
 
   # GET /tokimons/new
@@ -25,6 +26,7 @@ class TokimonsController < ApplicationController
   # POST /tokimons.json
   def create
     @tokimon = Tokimon.new(tokimon_params)
+    @tokimon.update_attribute(:total, @tokimon.fly + @tokimon.fight + @tokimon.fire + @tokimon.water + @tokimon.electric + @tokimon.ice)
 
     respond_to do |format|
       if @tokimon.save

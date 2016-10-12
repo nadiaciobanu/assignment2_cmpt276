@@ -1,6 +1,42 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<h1>Displaying Tokimon</h1>
+<h2><%=@tokimon.tname %></h2>
+<table>
+  <thead>
+    <tr>
+      <th>Tokimon Name</th>
+      <th>Weight</th>
+      <th>Height</th>
+      <th>Flying Ability</th>
+      <th>Fighting Ability</th>
+      <th>Fire Ability</th>
+      <th>Water Ability</th>
+      <th>Electric Ability</th>
+      <th>Ice Ability</th>
+      <th>Total Ability</th>
+      <th>Trainer Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @tokimon.tname %></td>
+        <td><%= @tokimon.weight %></td>
+        <td><%= @tokimon.height %></td>
+        <td><%= @tokimon.fly %></td>
+        <td><%= @tokimon.fight %></td>
+        <td><%= @tokimon.fire %></td>
+        <td><%= @tokimon.water %></td>
+        <td><%= @tokimon.electric %></td>
+        <td><%= @tokimon.ice %></td>
+        <td><%= @tokimon.total %></td>
+        <td><%= link_to (Trainer.find(@tokimon.trainer_id)).pname, Trainer.find(@tokimon.trainer_id) %></td>
+      </tr>
+  </tbody>
+</table>
+
+<!-- <p>
   <strong>Name:</strong>
   <%= @tokimon.tname %>
 </p>
@@ -51,9 +87,9 @@
 </p>
 
 <p>
-  <strong>Trainer ID:</strong>
-  <%= @tokimon.trainer_id %>
-</p>
+  <strong>Trainer Name:</strong>
+  <%= @trainer.pname %>
+</p> -->
 
 <div class="aLink"><%= link_to 'Edit', edit_tokimon_path(@tokimon) %> |
 <%= link_to 'Back', tokimons_path %></div>

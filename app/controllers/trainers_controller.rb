@@ -25,6 +25,7 @@ class TrainersController < ApplicationController
   # POST /trainers.json
   def create
     @trainer = Trainer.new(trainer_params)
+    @trainer.update_attribute(:level, 1)
 
     respond_to do |format|
       if @trainer.save
