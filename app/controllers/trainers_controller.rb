@@ -12,7 +12,6 @@ class TrainersController < ApplicationController
   def show
     @trainer = Trainer.find(params[:id])
     @theTokimons = @trainer.tokimons
-
   end
 
   # GET /trainers/new
