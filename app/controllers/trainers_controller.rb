@@ -10,6 +10,9 @@ class TrainersController < ApplicationController
   # GET /trainers/1
   # GET /trainers/1.json
   def show
+    @trainer = Trainer.find(params[:id])
+    @theTokimons = @trainer.tokimons
+
   end
 
   # GET /trainers/new

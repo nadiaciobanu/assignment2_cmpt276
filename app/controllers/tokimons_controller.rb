@@ -20,6 +20,7 @@ class TokimonsController < ApplicationController
 
   # GET /tokimons/1/edit
   def edit
+    @tokimon.update_attribute(:total, @tokimon.fly + @tokimon.fight + @tokimon.fire + @tokimon.water + @tokimon.electric + @tokimon.ice)
   end
 
   # POST /tokimons
