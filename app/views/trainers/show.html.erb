@@ -15,12 +15,11 @@
   <tbody>
       <tr>
         <td><%= @trainer.pname %></td>
-        <td><%= @theTokimons %></td>
-        <!--<td><%#= @trainer.level %></td>
-<%# @theTokimons.each do |tokimon| %>
-            <td><%#= tokimon.tname %></td>
-        <%#end%>
-      </tr> -->
+        <td><%= @trainer.level %></td>
+        <td>  <% @theTokimons.each do |tokimon| %>
+            <%= tokimon.tname %></br>
+        <%end%></td>
+      </tr>
   </tbody>
 </table>
 

@@ -38,6 +38,10 @@ class TokimonsController < ApplicationController
         format.json { render json: @tokimon.errors, status: :unprocessable_entity }
       end
     end
+
+    @trainerID = @tokimon.trainer_id
+    @trainer = Trainer.find(@trainerID)
+    @trainer.tokimons << @tokimon
   end
 
   # PATCH/PUT /tokimons/1
