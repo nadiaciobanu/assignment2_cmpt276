@@ -1,3 +1,10 @@
+# CMPT 276 ASSIGNMENT 2
+Features added:
+- ability to add the color of a tokimon using sophisticated color picker
+- ability to add a tokimon's psychic ability
+- navigation bar to enable easy transition between tokimons display page, trainers display page and home page
+
+
 # ruby-getting-started
 
 A barebones Rails app, which can easily be deployed to Heroku.
@@ -65,4 +72,3 @@ You can also use Docker to release to Heroku:
 For more information about using Ruby on Heroku, see these Dev Center articles:
 
 - [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
-
