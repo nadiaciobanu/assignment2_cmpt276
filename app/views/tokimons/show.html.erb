@@ -8,6 +8,7 @@
       <th>Tokimon Name</th>
       <th>Weight</th>
       <th>Height</th>
+      <th>Colour</th>
       <th>Flying Ability</th>
       <th>Fighting Ability</th>
       <th>Fire Ability</th>
@@ -24,6 +25,7 @@
         <td><%= @tokimon.tname %></td>
         <td><%= @tokimon.weight %></td>
         <td><%= @tokimon.height %></td>
+        <td style="background-color:<%= @tokimon.colour %>"><%= @tokimon.colour %></td>
         <td><%= @tokimon.fly %></td>
         <td><%= @tokimon.fight %></td>
         <td><%= @tokimon.fire %></td>
@@ -36,60 +38,5 @@
   </tbody>
 </table>
 
-<!-- <p>
-  <strong>Name:</strong>
-  <%= @tokimon.tname %>
-</p>
-
-<p>
-  <strong>Weight:</strong>
-  <%= @tokimon.weight %>
-</p>
-
-<p>
-  <strong>Height:</strong>
-  <%= @tokimon.height %>
-</p>
-
-<p>
-  <strong>Flying Ablity:</strong>
-  <%= @tokimon.fly %>
-</p>
-
-<p>
-  <strong>Fighting Ability:</strong>
-  <%= @tokimon.fight %>
-</p>
-
-<p>
-  <strong>Fire Ability:</strong>
-  <%= @tokimon.fire %>
-</p>
-
-<p>
-  <strong>Water Ability:</strong>
-  <%= @tokimon.water %>
-</p>
-
-<p>
-  <strong>Electric Ability:</strong>
-  <%= @tokimon.electric %>
-</p>
-
-<p>
-  <strong>Ice Ability:</strong>
-  <%= @tokimon.ice %>
-</p>
-
-<p>
-  <strong>Total Ability:</strong>
-  <%= @tokimon.total %>
-</p>
-
-<p>
-  <strong>Trainer Name:</strong>
-  <%= @trainer.pname %>
-</p> -->
-
-<div class="aLink"><%= link_to 'Edit', edit_tokimon_path(@tokimon) %> |
+<div class="linkA"><%= link_to 'Edit', edit_tokimon_path(@tokimon) %> |
 <%= link_to 'Back', tokimons_path %></div>

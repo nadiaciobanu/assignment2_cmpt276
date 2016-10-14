@@ -46,7 +46,12 @@ p {
   font-size: 15px;
 }
 
- .aLink {
+.linkA {
+  font-size: 20px;
+  margin: 1% 0% 1% 5%;
+}
+
+ .linkB {
    font-size: 20px;
    margin: 1% 0% 1% 2%;
  }

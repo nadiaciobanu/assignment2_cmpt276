@@ -8,6 +8,7 @@
       <th>Tokimon Name</th>
       <th>Weight</th>
       <th>Height</th>
+      <th>Colour</th>
       <th>Flying Ability</th>
       <th>Fighting Ability</th>
       <th>Fire Ability</th>
@@ -26,6 +27,7 @@
         <td><%= tokimon.tname %></td>
         <td><%= tokimon.weight %></td>
         <td><%= tokimon.height %></td>
+        <td style="background-color:<%= tokimon.colour %>"><%= tokimon.colour %></td>
         <td><%= tokimon.fly %></td>
         <td><%= tokimon.fight %></td>
         <td><%= tokimon.fire %></td>
@@ -44,4 +46,4 @@
 
 <br>
 
-<div class="aLink"><%= link_to 'New Tokimon', new_tokimon_path %></div>
+<div class="linkA"><%= link_to 'New Tokimon', new_tokimon_path %></div>

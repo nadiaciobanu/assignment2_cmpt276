@@ -24,6 +24,10 @@
     <%= f.text_field :height %>
   </div>
   <div class="field">
+    <%= f.label :colour %><br>
+    <%= color_field(:tokimon, :colour) %>
+  </div>
+  <div class="field">
     <%= f.label :fly %><br>
     <%= f.number_field :fly %>
   </div>
@@ -47,10 +51,6 @@
     <%= f.label :ice %><br>
     <%= f.number_field :ice %>
   </div>
-  <!-- <div class="field">
-    <%= f.label :total %><br>
-    <%= f.number_field :total %>
-  </div> -->
   <div class="field">
     <%= f.label :trainer_id %><br>
     <%= collection_select(:tokimon, :trainer_id, Trainer.all, :id, :pname, prompt:true) %>

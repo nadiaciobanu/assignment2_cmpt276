@@ -5,6 +5,9 @@ class TrainersController < ApplicationController
   # GET /trainers.json
   def index
     @trainers = Trainer.all
+    # @trainer = Trainer.find(params[:id])
+    # @theTokimons = @trainer.tokimons
+    # @trainerLevel = @theTokimons.size
   end
 
   # GET /trainers/1
@@ -28,7 +31,7 @@ class TrainersController < ApplicationController
   # POST /trainers.json
   def create
     @trainer = Trainer.new(trainer_params)
-    @trainer.update_attribute(:level, 1)
+    @trainer.update_attribute(:level, 0)
 
     respond_to do |format|
       if @trainer.save

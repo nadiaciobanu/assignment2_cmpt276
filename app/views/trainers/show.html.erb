@@ -17,11 +17,11 @@
         <td><%= @trainer.pname %></td>
         <td><%= @trainer.level %></td>
         <td>  <% @theTokimons.each do |tokimon| %>
-            <%= tokimon.tname %></br>
+            <%= link_to tokimon.tname, tokimon %></br>
         <%end%></td>
       </tr>
   </tbody>
 </table>
 
-<div class="aLink"><%= link_to 'Edit', edit_trainer_path(@trainer) %> |
+<div class="linkA"><%= link_to 'Edit', edit_trainer_path(@trainer) %> |
 <%= link_to 'Back', trainers_path %></div>

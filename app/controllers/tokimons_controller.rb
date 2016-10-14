@@ -11,6 +11,7 @@ class TokimonsController < ApplicationController
   # GET /tokimons/1.json
   def show
     @trainer = Trainer.find(@tokimon.trainer_id)
+    @tokimon.update_attribute(:total, @tokimon.fly + @tokimon.fight + @tokimon.fire + @tokimon.water + @tokimon.electric + @tokimon.ice)
   end
 
   # GET /tokimons/new
@@ -41,6 +42,9 @@ class TokimonsController < ApplicationController
 
     @trainerID = @tokimon.trainer_id
     @trainer = Trainer.find(@trainerID)
+    @theTokimons = @trainer.tokimons
+    @numTokimons = @theTokimons.size
+    @trainer.update_attribute(:level, @numTokimons / 3)
     @trainer.tokimons << @tokimon
   end
 
@@ -61,6 +65,12 @@ class TokimonsController < ApplicationController
   # DELETE /tokimons/1
   # DELETE /tokimons/1.json
   def destroy
+    @trainerID = @tokimon.trainer_id
+    @trainer = Trainer.find(@trainerID)
+    @theTokimons = @trainer.tokimons
+    @numTokimons = @theTokimons.size
+    @trainer.update_attribute(:level, (@numTokimons-1) / 3)
+
     @tokimon.destroy
     respond_to do |format|
       format.html { redirect_to tokimons_url, notice: 'Tokimon was successfully destroyed.' }
@@ -76,6 +86,6 @@ class TokimonsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tokimon_params
-      params.require(:tokimon).permit(:tname, :weight, :height, :fly, :fight, :fire, :water, :electric, :ice, :total, :trainer_id)
+      params.require(:tokimon).permit(:tname, :weight, :height, :colour, :fly, :fight, :fire, :water, :electric, :ice, :total, :trainer_id)
     end
 end
