@@ -11,7 +11,7 @@ class TokimonsController < ApplicationController
   # GET /tokimons/1.json
   def show
     @trainer = Trainer.find(@tokimon.trainer_id)
-    @tokimon.update_attribute(:total, @tokimon.fly + @tokimon.fight + @tokimon.fire + @tokimon.water + @tokimon.electric + @tokimon.ice)
+    @tokimon.update_attribute(:total, @tokimon.fly + @tokimon.fight + @tokimon.fire + @tokimon.water + @tokimon.electric + @tokimon.ice + @tokimon.psychic)
   end
 
   # GET /tokimons/new
@@ -21,14 +21,14 @@ class TokimonsController < ApplicationController
 
   # GET /tokimons/1/edit
   def edit
-    @tokimon.update_attribute(:total, @tokimon.fly + @tokimon.fight + @tokimon.fire + @tokimon.water + @tokimon.electric + @tokimon.ice)
+    @tokimon.update_attribute(:total, @tokimon.fly + @tokimon.fight + @tokimon.fire + @tokimon.water + @tokimon.electric + @tokimon.ice + @tokimon.psychic)
   end
 
   # POST /tokimons
   # POST /tokimons.json
   def create
     @tokimon = Tokimon.new(tokimon_params)
-    @tokimon.update_attribute(:total, @tokimon.fly + @tokimon.fight + @tokimon.fire + @tokimon.water + @tokimon.electric + @tokimon.ice)
+    @tokimon.update_attribute(:total, @tokimon.fly + @tokimon.fight + @tokimon.fire + @tokimon.water + @tokimon.electric + @tokimon.ice + @tokimon.psychic)
 
     respond_to do |format|
       if @tokimon.save
@@ -86,6 +86,6 @@ class TokimonsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tokimon_params
-      params.require(:tokimon).permit(:tname, :weight, :height, :colour, :fly, :fight, :fire, :water, :electric, :ice, :total, :trainer_id)
+      params.require(:tokimon).permit(:tname, :weight, :height, :colour, :fly, :fight, :fire, :water, :electric, :ice, :psychic, :total, :trainer_id)
     end
 end

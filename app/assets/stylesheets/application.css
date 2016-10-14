@@ -33,13 +33,17 @@ table {
 }
 
 .actions {
-  margin: 2% 0% 2% 2%;
+  margin: 2% 0% 2% 5%;
   font-size: 20px;
 }
 
 .field {
-  margin: 0% 0% 2% 2%;
-  display: inline-block;
+  margin: 1% 0% 1% 5%;
+  /*display: inline-block;*/
+}
+
+#trainer {
+  margin: 1% 0% 1% 5%;
 }
 
 p {
