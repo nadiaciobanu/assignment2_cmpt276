@@ -1,0 +1,712 @@
+2016-10-24T21:17:04.159219+00:00 heroku[web.1]: Unidling
+2016-10-24T21:17:04.159546+00:00 heroku[web.1]: State changed from down to starting
+2016-10-24T21:17:07.002201+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2016-10-24T21:17:09.268883+00:00 app[web.1]: [3] Puma starting in cluster mode...
+2016-10-24T21:17:09.268920+00:00 app[web.1]: [3] * Version 3.6.0 (ruby 2.2.4-p230), codename: Sleepy Sunday Serenity
+2016-10-24T21:17:09.268921+00:00 app[web.1]: [3] * Min threads: 5, max threads: 5
+2016-10-24T21:17:09.268921+00:00 app[web.1]: [3] * Environment: production
+2016-10-24T21:17:09.268922+00:00 app[web.1]: [3] * Process workers: 2
+2016-10-24T21:17:09.268922+00:00 app[web.1]: [3] * Preloading application
+2016-10-24T21:17:10.669633+00:00 app[web.1]: [3] * Listening on tcp://0.0.0.0:24729
+2016-10-24T21:17:10.669797+00:00 app[web.1]: [3] Use Ctrl-C to stop
+2016-10-24T21:17:10.673940+00:00 app[web.1]: [3] - Worker 0 (pid: 6) booted, phase: 0
+2016-10-24T21:17:10.674970+00:00 app[web.1]: [3] - Worker 1 (pid: 10) booted, phase: 0
+2016-10-24T21:17:11.332892+00:00 heroku[router]: at=info method=GET path="/" host=arcane-bastion-59984.herokuapp.com request_id=21915e9c-4b17-45c8-a599-c45f942bb63c fwd="207.23.170.72" dyno=web.1 connect=1ms service=82ms status=200 bytes=8207
+2016-10-24T21:17:11.102677+00:00 heroku[web.1]: State changed from starting to up
+2016-10-24T21:17:11.287412+00:00 app[web.1]: Started GET "/" for 207.23.170.72 at 2016-10-24 21:17:11 +0000
+2016-10-24T21:17:11.344292+00:00 app[web.1]: Processing by WelcomeController#index as HTML
+2016-10-24T21:17:11.357803+00:00 app[web.1]:   Rendered welcome/index.erb within layouts/application (0.7ms)
+2016-10-24T21:17:11.359999+00:00 app[web.1]: Completed 200 OK in 15ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+2016-10-24T21:17:11.779241+00:00 heroku[router]: at=info method=GET path="/assets/application-65b06790c910bd8b6e026af00c16cb539012b9dcab62fc2b7effa7d9b2655b44.js" host=arcane-bastion-59984.herokuapp.com request_id=a434bac2-c5ce-4418-8a22-8b2e7d7f35a8 fwd="207.23.170.72" dyno=web.1 connect=7ms service=11ms status=200 bytes=43830
+2016-10-24T21:17:12.920528+00:00 heroku[router]: at=info method=GET path="/assets/application-c7658338ecbdf8a2f4d146b5e4cd5ff0367a7c491c4270a505c32d2876b35d12.css" host=arcane-bastion-59984.herokuapp.com request_id=7ecc466d-3dcf-4b94-8837-586c16ca1fcd fwd="207.23.170.72" dyno=web.1 connect=1ms service=2ms status=200 bytes=788
+2016-10-24T21:17:13.315354+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-bastion-59984.herokuapp.com request_id=06f2eada-2aa0-47da-966e-b73d7061cba2 fwd="207.23.170.72" dyno=web.1 connect=1ms service=5ms status=200 bytes=143
+2016-10-24T21:17:33.259591+00:00 app[web.1]: Started GET "/tokimons" for 207.23.170.72 at 2016-10-24 21:17:33 +0000
+2016-10-24T21:17:33.313477+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-10-24T21:17:33.340978+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (10.8ms)
+2016-10-24T21:17:33.344502+00:00 app[web.1]: Completed 200 OK in 31ms (Views: 16.4ms | ActiveRecord: 4.2ms)
+2016-10-24T21:17:33.315438+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=28841a8f-9aaa-48a4-892a-f3ad8bdc5512 fwd="207.23.170.72" dyno=web.1 connect=1ms service=89ms status=200 bytes=4701
+2016-10-24T21:17:35.554959+00:00 heroku[router]: at=info method=GET path="/tokimons/new" host=arcane-bastion-59984.herokuapp.com request_id=5a34549e-0579-4e5b-a6d3-eb0f9389dfa9 fwd="207.23.170.72" dyno=web.1 connect=1ms service=57ms status=200 bytes=6463
+2016-10-24T21:17:35.530820+00:00 app[web.1]: Started GET "/tokimons/new" for 207.23.170.72 at 2016-10-24 21:17:35 +0000
+2016-10-24T21:17:35.535726+00:00 app[web.1]: Processing by TokimonsController#new as HTML
+2016-10-24T21:17:35.583269+00:00 app[web.1]:   Rendered tokimons/_form.html.erb (19.2ms)
+2016-10-24T21:17:35.583450+00:00 app[web.1]:   Rendered tokimons/new.html.erb within layouts/application (20.2ms)
+2016-10-24T21:17:35.584398+00:00 app[web.1]: Completed 200 OK in 49ms (Views: 21.0ms | ActiveRecord: 10.0ms)
+2016-10-24T21:17:57.521275+00:00 app[web.1]: Started POST "/tokimons" for 207.23.170.72 at 2016-10-24 21:17:57 +0000
+2016-10-24T21:17:57.523591+00:00 app[web.1]: Processing by TokimonsController#create as HTML
+2016-10-24T21:17:57.523653+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"58QdZ7or/s/bVjChl5zXT77zu5Y1rUmUUAizvklORb6djXjju7QgLUFHzoS6YNIlkOCPlj5ll2llksp3xFmerw==", "tokimon"=>{"tname"=>"jhj", "weight"=>"1", "height"=>"kjh", "colour"=>"#000000", "fly"=>"1", "fight"=>"1", "fire"=>"1", "water"=>"1", "electric"=>"1", "ice"=>"1", "psychic"=>"1", "trainer_id"=>""}, "commit"=>"Create Tokimon"}
+2016-10-24T21:17:57.559153+00:00 app[web.1]: Redirected to https://arcane-bastion-59984.herokuapp.com/tokimons/7
+2016-10-24T21:17:57.568400+00:00 app[web.1]: Completed 404 Not Found in 45ms (ActiveRecord: 15.7ms)
+2016-10-24T21:17:57.570529+00:00 app[web.1]: 
+2016-10-24T21:17:57.570531+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-10-24T21:17:57.570531+00:00 app[web.1]:   app/controllers/tokimons_controller.rb:44:in `create'
+2016-10-24T21:17:57.570532+00:00 app[web.1]: 
+2016-10-24T21:17:57.570532+00:00 app[web.1]: 
+2016-10-24T21:17:57.540456+00:00 heroku[router]: at=info method=POST path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=94a9a2ee-8173-4574-b6f4-ff9e447b209b fwd="207.23.170.72" dyno=web.1 connect=12ms service=72ms status=404 bytes=1744
+2016-10-24T21:54:02.739978+00:00 heroku[web.1]: Idling
+2016-10-24T21:54:02.740641+00:00 heroku[web.1]: State changed from up to down
+2016-10-24T21:54:05.876934+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-10-24T21:54:06.679191+00:00 app[web.1]: [3] - Gracefully shutting down workers...
+2016-10-24T21:54:06.937886+00:00 app[web.1]: [3] === puma shutdown: 2016-10-24 21:54:06 +0000 ===
+2016-10-24T21:54:06.937943+00:00 app[web.1]: [3] - Goodbye!
+2016-10-24T21:54:07.133020+00:00 heroku[web.1]: Process exited with status 0
+2016-10-24T22:49:17.733993+00:00 heroku[web.1]: Unidling
+2016-10-24T22:49:17.734811+00:00 heroku[web.1]: State changed from down to starting
+2016-10-24T22:49:21.115435+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2016-10-24T22:49:24.301535+00:00 app[web.1]: [3] Puma starting in cluster mode...
+2016-10-24T22:49:24.301622+00:00 app[web.1]: [3] * Version 3.6.0 (ruby 2.2.4-p230), codename: Sleepy Sunday Serenity
+2016-10-24T22:49:24.301624+00:00 app[web.1]: [3] * Min threads: 5, max threads: 5
+2016-10-24T22:49:24.301625+00:00 app[web.1]: [3] * Environment: production
+2016-10-24T22:49:24.301625+00:00 app[web.1]: [3] * Process workers: 2
+2016-10-24T22:49:24.301626+00:00 app[web.1]: [3] * Preloading application
+2016-10-24T22:49:26.299702+00:00 app[web.1]: [3] * Listening on tcp://0.0.0.0:48065
+2016-10-24T22:49:26.299897+00:00 app[web.1]: [3] Use Ctrl-C to stop
+2016-10-24T22:49:26.308306+00:00 app[web.1]: [3] - Worker 1 (pid: 10) booted, phase: 0
+2016-10-24T22:49:26.310091+00:00 app[web.1]: [3] - Worker 0 (pid: 6) booted, phase: 0
+2016-10-24T22:49:26.809482+00:00 heroku[web.1]: State changed from starting to up
+2016-10-24T22:49:27.024849+00:00 heroku[router]: at=info method=GET path="/" host=arcane-bastion-59984.herokuapp.com request_id=abca7866-3e82-4dca-a205-0efd002f03b4 fwd="142.58.22.250" dyno=web.1 connect=1ms service=82ms status=200 bytes=8207
+2016-10-24T22:49:26.995443+00:00 app[web.1]: Processing by WelcomeController#index as HTML
+2016-10-24T22:49:26.944817+00:00 app[web.1]: Started GET "/" for 142.58.22.250 at 2016-10-24 22:49:26 +0000
+2016-10-24T22:49:27.014968+00:00 app[web.1]:   Rendered welcome/index.erb within layouts/application (0.8ms)
+2016-10-24T22:49:27.017582+00:00 app[web.1]: Completed 200 OK in 22ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+2016-10-24T22:49:27.152545+00:00 heroku[router]: at=info method=GET path="/assets/application-65b06790c910bd8b6e026af00c16cb539012b9dcab62fc2b7effa7d9b2655b44.js" host=arcane-bastion-59984.herokuapp.com request_id=7aeb2326-8704-41e0-9456-c477ab3f66ad fwd="142.58.22.250" dyno=web.1 connect=1ms service=4ms status=200 bytes=43830
+2016-10-24T22:49:28.341391+00:00 heroku[router]: at=info method=GET path="/assets/application-c7658338ecbdf8a2f4d146b5e4cd5ff0367a7c491c4270a505c32d2876b35d12.css" host=arcane-bastion-59984.herokuapp.com request_id=1e97c2ad-9219-4f17-b764-3e678aeafb69 fwd="142.58.22.250" dyno=web.1 connect=1ms service=2ms status=200 bytes=788
+2016-10-24T22:49:28.615856+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-bastion-59984.herokuapp.com request_id=5ab6953e-e6a3-4db7-9420-d4f0262fa644 fwd="142.58.22.250" dyno=web.1 connect=1ms service=2ms status=200 bytes=143
+2016-10-24T22:49:35.076200+00:00 heroku[router]: at=info method=GET path="/trainers" host=arcane-bastion-59984.herokuapp.com request_id=9a15409e-8fa2-42ad-8463-eb73957b3822 fwd="142.58.22.250" dyno=web.1 connect=4ms service=19ms status=200 bytes=4390
+2016-10-24T22:49:35.017602+00:00 app[web.1]: Started GET "/trainers" for 142.58.22.250 at 2016-10-24 22:49:35 +0000
+2016-10-24T22:49:35.020756+00:00 app[web.1]: Processing by TrainersController#index as HTML
+2016-10-24T22:49:35.032413+00:00 app[web.1]:   Rendered trainers/index.html.erb within layouts/application (6.9ms)
+2016-10-24T22:49:35.033263+00:00 app[web.1]: Completed 200 OK in 12ms (Views: 6.7ms | ActiveRecord: 4.0ms)
+2016-10-24T22:49:38.553552+00:00 heroku[router]: at=info method=GET path="/trainers/new" host=arcane-bastion-59984.herokuapp.com request_id=19971e15-be41-4618-a30c-a3cbc2ac595f fwd="142.58.22.250" dyno=web.1 connect=1ms service=80ms status=200 bytes=4731
+2016-10-24T22:49:38.443762+00:00 app[web.1]: Started GET "/trainers/new" for 142.58.22.250 at 2016-10-24 22:49:38 +0000
+2016-10-24T22:49:38.450334+00:00 app[web.1]: Processing by TrainersController#new as HTML
+2016-10-24T22:49:38.507838+00:00 app[web.1]:   Rendered trainers/_form.html.erb (24.7ms)
+2016-10-24T22:49:38.508236+00:00 app[web.1]:   Rendered trainers/new.html.erb within layouts/application (30.0ms)
+2016-10-24T22:49:38.509809+00:00 app[web.1]: Completed 200 OK in 59ms (Views: 32.7ms | ActiveRecord: 5.6ms)
+2016-10-24T22:49:44.807396+00:00 heroku[router]: at=info method=POST path="/trainers" host=arcane-bastion-59984.herokuapp.com request_id=10f7f9a2-0285-49a0-93f0-b792090f6a24 fwd="142.58.22.250" dyno=web.1 connect=2ms service=34ms status=302 bytes=977
+2016-10-24T22:49:44.920909+00:00 heroku[router]: at=info method=GET path="/trainers/4" host=arcane-bastion-59984.herokuapp.com request_id=86a510b5-5ea4-450f-a8c5-599ca43ed339 fwd="142.58.22.250" dyno=web.1 connect=1ms service=34ms status=200 bytes=4702
+2016-10-24T22:49:44.737957+00:00 app[web.1]: Started POST "/trainers" for 142.58.22.250 at 2016-10-24 22:49:44 +0000
+2016-10-24T22:49:44.740669+00:00 app[web.1]: Processing by TrainersController#create as HTML
+2016-10-24T22:49:44.740733+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"tGlgUZPIB/jS8CaY5C0AXKJ55PvXgwScS7w1j7gingRcKzffRNp9NO/A60I22Qp3JfPpb2sgvouSQBSWvqGDAg==", "trainer"=>{"pname"=>"trainer1"}, "commit"=>"Create Trainer"}
+2016-10-24T22:49:44.764100+00:00 app[web.1]: Redirected to https://arcane-bastion-59984.herokuapp.com/trainers/4
+2016-10-24T22:49:44.764331+00:00 app[web.1]: Completed 302 Found in 23ms (ActiveRecord: 10.6ms)
+2016-10-24T22:49:44.846815+00:00 app[web.1]: Started GET "/trainers/4" for 142.58.22.250 at 2016-10-24 22:49:44 +0000
+2016-10-24T22:49:44.848928+00:00 app[web.1]: Processing by TrainersController#show as HTML
+2016-10-24T22:49:44.848958+00:00 app[web.1]:   Parameters: {"id"=>"4"}
+2016-10-24T22:49:44.876406+00:00 app[web.1]:   Rendered trainers/show.html.erb within layouts/application (5.2ms)
+2016-10-24T22:49:44.877513+00:00 app[web.1]: Completed 200 OK in 28ms (Views: 6.0ms | ActiveRecord: 4.2ms)
+2016-10-24T22:50:09.750119+00:00 heroku[router]: at=info method=GET path="/trainers" host=arcane-bastion-59984.herokuapp.com request_id=31630117-594c-4aac-a407-d66c9385db75 fwd="142.58.22.250" dyno=web.1 connect=1ms service=11ms status=200 bytes=4675
+2016-10-24T22:50:09.698946+00:00 app[web.1]: Started GET "/trainers" for 142.58.22.250 at 2016-10-24 22:50:09 +0000
+2016-10-24T22:50:09.701306+00:00 app[web.1]: Processing by TrainersController#index as HTML
+2016-10-24T22:50:09.705603+00:00 app[web.1]:   Rendered trainers/index.html.erb within layouts/application (3.0ms)
+2016-10-24T22:50:09.706774+00:00 app[web.1]: Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 1.3ms)
+2016-10-24T23:23:31.695911+00:00 heroku[web.1]: Idling
+2016-10-24T23:23:31.696442+00:00 heroku[web.1]: State changed from up to down
+2016-10-24T23:23:34.320647+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-10-24T23:23:34.970370+00:00 app[web.1]: [3] - Gracefully shutting down workers...
+2016-10-24T23:23:35.289440+00:00 app[web.1]: [3] === puma shutdown: 2016-10-24 23:23:35 +0000 ===
+2016-10-24T23:23:35.289460+00:00 app[web.1]: [3] - Goodbye!
+2016-10-24T23:23:35.552785+00:00 heroku[web.1]: Process exited with status 0
+2016-10-30T18:11:45.787780+00:00 heroku[web.1]: Unidling
+2016-10-30T18:11:45.787920+00:00 heroku[web.1]: State changed from down to starting
+2016-10-30T18:11:48.208762+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2016-10-30T18:11:50.460070+00:00 app[web.1]: [3] Puma starting in cluster mode...
+2016-10-30T18:11:50.460109+00:00 app[web.1]: [3] * Version 3.6.0 (ruby 2.2.4-p230), codename: Sleepy Sunday Serenity
+2016-10-30T18:11:50.460110+00:00 app[web.1]: [3] * Min threads: 5, max threads: 5
+2016-10-30T18:11:50.460111+00:00 app[web.1]: [3] * Environment: production
+2016-10-30T18:11:50.460111+00:00 app[web.1]: [3] * Process workers: 2
+2016-10-30T18:11:50.460114+00:00 app[web.1]: [3] * Preloading application
+2016-10-30T18:11:52.397482+00:00 heroku[web.1]: State changed from starting to up
+2016-10-30T18:11:52.278304+00:00 app[web.1]: [3] * Listening on tcp://0.0.0.0:42660
+2016-10-30T18:11:52.278494+00:00 app[web.1]: [3] Use Ctrl-C to stop
+2016-10-30T18:11:52.282956+00:00 app[web.1]: [3] - Worker 0 (pid: 6) booted, phase: 0
+2016-10-30T18:11:52.285732+00:00 app[web.1]: [3] - Worker 1 (pid: 10) booted, phase: 0
+2016-10-30T18:11:52.900998+00:00 heroku[router]: at=info method=GET path="/" host=arcane-bastion-59984.herokuapp.com request_id=9c150c1c-e189-4b46-a335-4d8a0234b19b fwd="64.180.13.246" dyno=web.1 connect=0ms service=65ms status=200 bytes=8207
+2016-10-30T18:11:52.834919+00:00 app[web.1]: Started GET "/" for 64.180.13.246 at 2016-10-30 18:11:52 +0000
+2016-10-30T18:11:52.877646+00:00 app[web.1]: Processing by WelcomeController#index as HTML
+2016-10-30T18:11:52.890751+00:00 app[web.1]:   Rendered welcome/index.erb within layouts/application (0.6ms)
+2016-10-30T18:11:52.893022+00:00 app[web.1]: Completed 200 OK in 15ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+2016-10-30T18:11:53.544974+00:00 heroku[router]: at=info method=GET path="/assets/application-65b06790c910bd8b6e026af00c16cb539012b9dcab62fc2b7effa7d9b2655b44.js" host=arcane-bastion-59984.herokuapp.com request_id=044ea0fb-13ca-4352-8ff2-982b44fcbb5b fwd="64.180.13.246" dyno=web.1 connect=0ms service=2ms status=200 bytes=43830
+2016-10-30T18:11:53.764990+00:00 heroku[router]: at=info method=GET path="/assets/application-c7658338ecbdf8a2f4d146b5e4cd5ff0367a7c491c4270a505c32d2876b35d12.css" host=arcane-bastion-59984.herokuapp.com request_id=9172da96-d8be-4562-8ee5-b62630f0a1b8 fwd="64.180.13.246" dyno=web.1 connect=1ms service=1ms status=200 bytes=788
+2016-10-30T18:11:54.313774+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-bastion-59984.herokuapp.com request_id=25393106-fb6d-4905-b44e-a3072fdd3afb fwd="64.180.13.246" dyno=web.1 connect=0ms service=2ms status=200 bytes=143
+2016-10-30T18:11:58.675755+00:00 heroku[router]: at=info method=GET path="/trainers" host=arcane-bastion-59984.herokuapp.com request_id=23298800-1e49-4a95-8403-dff9d4578327 fwd="64.180.13.246" dyno=web.1 connect=0ms service=23ms status=200 bytes=4675
+2016-10-30T18:11:58.647376+00:00 app[web.1]: Started GET "/trainers" for 64.180.13.246 at 2016-10-30 18:11:58 +0000
+2016-10-30T18:11:58.649942+00:00 app[web.1]: Processing by TrainersController#index as HTML
+2016-10-30T18:11:58.668168+00:00 app[web.1]:   Rendered trainers/index.html.erb within layouts/application (14.0ms)
+2016-10-30T18:11:58.669027+00:00 app[web.1]: Completed 200 OK in 19ms (Views: 11.6ms | ActiveRecord: 5.8ms)
+2016-10-30T18:12:00.081552+00:00 heroku[router]: at=info method=GET path="/trainers/new" host=arcane-bastion-59984.herokuapp.com request_id=6ee386b8-1891-43de-ba4a-d6ff517b7919 fwd="64.180.13.246" dyno=web.1 connect=0ms service=16ms status=200 bytes=4731
+2016-10-30T18:12:00.060524+00:00 app[web.1]: Started GET "/trainers/new" for 64.180.13.246 at 2016-10-30 18:12:00 +0000
+2016-10-30T18:12:00.062719+00:00 app[web.1]: Processing by TrainersController#new as HTML
+2016-10-30T18:12:00.072972+00:00 app[web.1]:   Rendered trainers/_form.html.erb (7.4ms)
+2016-10-30T18:12:00.073103+00:00 app[web.1]:   Rendered trainers/new.html.erb within layouts/application (8.7ms)
+2016-10-30T18:12:00.073857+00:00 app[web.1]: Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+2016-10-30T18:12:04.070583+00:00 heroku[router]: at=info method=POST path="/trainers" host=arcane-bastion-59984.herokuapp.com request_id=3b07a48a-3d95-4849-a2d5-6687b2ea94d1 fwd="64.180.13.246" dyno=web.1 connect=1ms service=76ms status=302 bytes=977
+2016-10-30T18:12:03.996266+00:00 app[web.1]: Started POST "/trainers" for 64.180.13.246 at 2016-10-30 18:12:03 +0000
+2016-10-30T18:12:04.031354+00:00 app[web.1]: Processing by TrainersController#create as HTML
+2016-10-30T18:12:04.031365+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"bKNbRK4dY3aRX4ztScQ6pkb5+KDvN6KW+V4zqPK+iVe9iA4NnQ9/NrtIXfNL2XbLgZOKmFBoSLgxatUpJZDSAw==", "trainer"=>{"pname"=>"T1"}, "commit"=>"Create Trainer"}
+2016-10-30T18:12:04.063119+00:00 app[web.1]: Redirected to https://arcane-bastion-59984.herokuapp.com/trainers/5
+2016-10-30T18:12:04.063344+00:00 app[web.1]: Completed 302 Found in 32ms (ActiveRecord: 11.2ms)
+2016-10-30T18:12:04.628771+00:00 heroku[router]: at=info method=GET path="/trainers/5" host=arcane-bastion-59984.herokuapp.com request_id=d2bcce59-048f-4bfe-8d2a-33c7e9a810a4 fwd="64.180.13.246" dyno=web.1 connect=1ms service=31ms status=200 bytes=4690
+2016-10-30T18:12:04.593179+00:00 app[web.1]: Started GET "/trainers/5" for 64.180.13.246 at 2016-10-30 18:12:04 +0000
+2016-10-30T18:12:04.595040+00:00 app[web.1]: Processing by TrainersController#show as HTML
+2016-10-30T18:12:04.595117+00:00 app[web.1]:   Parameters: {"id"=>"5"}
+2016-10-30T18:12:04.619667+00:00 app[web.1]:   Rendered trainers/show.html.erb within layouts/application (4.0ms)
+2016-10-30T18:12:04.621752+00:00 app[web.1]: Completed 200 OK in 27ms (Views: 9.1ms | ActiveRecord: 2.9ms)
+2016-10-30T18:12:06.948135+00:00 heroku[router]: at=info method=GET path="/" host=arcane-bastion-59984.herokuapp.com request_id=25011d92-47da-484f-836b-3354fc0de07b fwd="64.180.13.246" dyno=web.1 connect=0ms service=5ms status=200 bytes=8371
+2016-10-30T18:12:06.937738+00:00 app[web.1]: Started GET "/" for 64.180.13.246 at 2016-10-30 18:12:06 +0000
+2016-10-30T18:12:06.939404+00:00 app[web.1]: Processing by WelcomeController#index as HTML
+2016-10-30T18:12:06.940243+00:00 app[web.1]:   Rendered welcome/index.erb within layouts/application (0.1ms)
+2016-10-30T18:12:06.940998+00:00 app[web.1]: Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+2016-10-30T18:12:08.438034+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=8af709fd-4896-4b4f-be78-d951009c88f7 fwd="64.180.13.246" dyno=web.1 connect=0ms service=44ms status=404 bytes=1744
+2016-10-30T18:12:08.388730+00:00 app[web.1]: Started GET "/tokimons" for 64.180.13.246 at 2016-10-30 18:12:08 +0000
+2016-10-30T18:12:08.430212+00:00 app[web.1]: Completed 500 Internal Server Error in 38ms (ActiveRecord: 5.5ms)
+2016-10-30T18:12:08.391643+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-10-30T18:12:08.431739+00:00 app[web.1]: 
+2016-10-30T18:12:08.431741+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-10-30T18:12:08.430067+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (33.0ms)
+2016-10-30T18:12:08.431742+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb__2818283866556262362_70065984381520'
+2016-10-30T18:12:08.431743+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb__2818283866556262362_70065984381520'
+2016-10-30T18:12:08.431743+00:00 app[web.1]: 
+2016-10-30T18:12:08.431744+00:00 app[web.1]: 
+2016-10-30T18:47:38.776909+00:00 heroku[web.1]: Idling
+2016-10-30T18:47:38.777534+00:00 heroku[web.1]: State changed from up to down
+2016-10-30T18:47:42.921556+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-10-30T18:47:44.067280+00:00 app[web.1]: [3] - Gracefully shutting down workers...
+2016-10-30T18:47:44.181946+00:00 app[web.1]: [3] === puma shutdown: 2016-10-30 18:47:44 +0000 ===
+2016-10-30T18:47:44.181954+00:00 app[web.1]: [3] - Goodbye!
+2016-10-30T18:47:44.392328+00:00 heroku[web.1]: Process exited with status 0
+2016-11-04T04:33:01.289864+00:00 heroku[web.1]: Unidling
+2016-11-04T04:33:01.290314+00:00 heroku[web.1]: State changed from down to starting
+2016-11-04T04:33:04.773607+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2016-11-04T04:33:07.826318+00:00 app[web.1]: [3] Puma starting in cluster mode...
+2016-11-04T04:33:07.826339+00:00 app[web.1]: [3] * Version 3.6.0 (ruby 2.2.4-p230), codename: Sleepy Sunday Serenity
+2016-11-04T04:33:07.826340+00:00 app[web.1]: [3] * Min threads: 5, max threads: 5
+2016-11-04T04:33:07.826344+00:00 app[web.1]: [3] * Process workers: 2
+2016-11-04T04:33:07.826341+00:00 app[web.1]: [3] * Environment: production
+2016-11-04T04:33:07.826379+00:00 app[web.1]: [3] * Preloading application
+2016-11-04T04:33:10.244782+00:00 app[web.1]: [3] Use Ctrl-C to stop
+2016-11-04T04:33:10.252083+00:00 app[web.1]: [3] - Worker 0 (pid: 6) booted, phase: 0
+2016-11-04T04:33:10.253827+00:00 app[web.1]: [3] - Worker 1 (pid: 10) booted, phase: 0
+2016-11-04T04:33:10.244451+00:00 app[web.1]: [3] * Listening on tcp://0.0.0.0:48435
+2016-11-04T04:33:10.692297+00:00 heroku[web.1]: State changed from starting to up
+2016-11-04T04:33:11.404056+00:00 app[web.1]: Started GET "/" for 207.34.169.208 at 2016-11-04 04:33:11 +0000
+2016-11-04T04:33:11.540176+00:00 app[web.1]: Processing by WelcomeController#index as HTML
+2016-11-04T04:33:11.560379+00:00 app[web.1]:   Rendered welcome/index.erb within layouts/application (1.2ms)
+2016-11-04T04:33:11.563504+00:00 app[web.1]: Completed 200 OK in 23ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+2016-11-04T04:33:11.566868+00:00 heroku[router]: at=info method=GET path="/" host=arcane-bastion-59984.herokuapp.com request_id=c8008bca-a75d-485f-8afb-64b1d0fee3d4 fwd="207.34.169.208" dyno=web.1 connect=1ms service=171ms status=200 bytes=8207
+2016-11-04T04:33:11.807664+00:00 heroku[router]: at=info method=GET path="/assets/application-65b06790c910bd8b6e026af00c16cb539012b9dcab62fc2b7effa7d9b2655b44.js" host=arcane-bastion-59984.herokuapp.com request_id=3cd4bc90-6d66-4ef9-9c80-d1a344c4d6e5 fwd="207.34.169.208" dyno=web.1 connect=1ms service=10ms status=200 bytes=43830
+2016-11-04T04:33:12.031341+00:00 heroku[router]: at=info method=GET path="/assets/application-c7658338ecbdf8a2f4d146b5e4cd5ff0367a7c491c4270a505c32d2876b35d12.css" host=arcane-bastion-59984.herokuapp.com request_id=5e24649a-f81f-49fb-a9d9-cc8792f72960 fwd="207.34.169.208" dyno=web.1 connect=1ms service=2ms status=200 bytes=788
+2016-11-04T04:33:20.078773+00:00 app[web.1]: Started GET "/tokimons" for 207.34.169.208 at 2016-11-04 04:33:20 +0000
+2016-11-04T04:33:20.079503+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-04T04:33:20.279160+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (154.5ms)
+2016-11-04T04:33:20.279503+00:00 app[web.1]: Completed 500 Internal Server Error in 200ms (ActiveRecord: 61.6ms)
+2016-11-04T04:33:20.281607+00:00 app[web.1]: 
+2016-11-04T04:33:20.281610+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-04T04:33:20.281611+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb___2023112830380590175_69815621832880'
+2016-11-04T04:33:20.281612+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb___2023112830380590175_69815621832880'
+2016-11-04T04:33:20.281612+00:00 app[web.1]: 
+2016-11-04T04:33:20.281613+00:00 app[web.1]: 
+2016-11-04T04:33:20.282870+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=58a78432-1412-4e56-8cad-fbb11e147e29 fwd="207.34.169.208" dyno=web.1 connect=1ms service=209ms status=404 bytes=1744
+2016-11-04T04:33:27.236304+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=46181d4d-ddc6-4f42-a4f5-54effb2f9a08 fwd="207.34.169.208" dyno=web.1 connect=1ms service=51ms status=404 bytes=1744
+2016-11-04T04:33:27.188309+00:00 app[web.1]: Started GET "/tokimons" for 207.34.169.208 at 2016-11-04 04:33:27 +0000
+2016-11-04T04:33:27.198578+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-04T04:33:27.231275+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (15.3ms)
+2016-11-04T04:33:27.235072+00:00 app[web.1]: 
+2016-11-04T04:33:27.235074+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-04T04:33:27.235075+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb___2023112830380590175_69815621832880'
+2016-11-04T04:33:27.235076+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb___2023112830380590175_69815621832880'
+2016-11-04T04:33:27.235076+00:00 app[web.1]: 
+2016-11-04T04:33:27.235077+00:00 app[web.1]: 
+2016-11-04T04:33:27.232288+00:00 app[web.1]: Completed 500 Internal Server Error in 34ms (ActiveRecord: 11.6ms)
+2016-11-04T04:33:37.372667+00:00 heroku[router]: at=info method=GET path="/trainers" host=arcane-bastion-59984.herokuapp.com request_id=d74891d7-454a-4517-be2a-5b2d7e3302d3 fwd="207.34.169.208" dyno=web.1 connect=1ms service=50ms status=200 bytes=4955
+2016-11-04T04:33:37.329182+00:00 app[web.1]: Started GET "/trainers" for 207.34.169.208 at 2016-11-04 04:33:37 +0000
+2016-11-04T04:33:37.333079+00:00 app[web.1]: Processing by TrainersController#index as HTML
+2016-11-04T04:33:37.368499+00:00 app[web.1]:   Rendered trainers/index.html.erb within layouts/application (19.8ms)
+2016-11-04T04:33:37.370057+00:00 app[web.1]: Completed 200 OK in 37ms (Views: 30.7ms | ActiveRecord: 4.7ms)
+2016-11-04T04:33:49.130233+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=2be00702-a087-4ecf-b220-117868c221ec fwd="207.34.169.208" dyno=web.1 connect=1ms service=26ms status=404 bytes=1744
+2016-11-04T04:33:49.111528+00:00 app[web.1]: Started GET "/tokimons" for 207.34.169.208 at 2016-11-04 04:33:49 +0000
+2016-11-04T04:33:49.119851+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-04T04:33:49.126429+00:00 app[web.1]: Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.1ms)
+2016-11-04T04:33:49.126200+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (4.7ms)
+2016-11-04T04:33:49.128606+00:00 app[web.1]: 
+2016-11-04T04:33:49.128607+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-04T04:33:49.128609+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb___2023112830380590175_69815621832880'
+2016-11-04T04:33:49.128608+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb___2023112830380590175_69815621832880'
+2016-11-04T04:33:49.128610+00:00 app[web.1]: 
+2016-11-04T04:33:49.128611+00:00 app[web.1]: 
+2016-11-04T04:33:59.875650+00:00 app[web.1]: Started GET "/tokimons" for 207.34.169.208 at 2016-11-04 04:33:59 +0000
+2016-11-04T04:34:00.024653+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-04T04:34:00.201790+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=e7d7704e-a1ec-4d91-9d92-ede0b5dea127 fwd="207.34.169.208" dyno=web.1 connect=2ms service=347ms status=404 bytes=1744
+2016-11-04T04:34:00.198101+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (123.9ms)
+2016-11-04T04:34:00.198464+00:00 app[web.1]: Completed 500 Internal Server Error in 174ms (ActiveRecord: 51.4ms)
+2016-11-04T04:34:00.200611+00:00 app[web.1]: 
+2016-11-04T04:34:00.200614+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-04T04:34:00.200615+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb___2023112830380590175_69815621996060'
+2016-11-04T04:34:00.200616+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb___2023112830380590175_69815621996060'
+2016-11-04T04:34:00.200616+00:00 app[web.1]: 
+2016-11-04T04:34:00.200617+00:00 app[web.1]: 
+2016-11-04T04:34:11.557660+00:00 heroku[router]: at=info method=GET path="/" host=arcane-bastion-59984.herokuapp.com request_id=38c0fb1c-d449-4a3a-92a4-05af48c1b5b4 fwd="207.34.169.208" dyno=web.1 connect=3ms service=31ms status=200 bytes=8207
+2016-11-04T04:34:11.531698+00:00 app[web.1]: Started GET "/" for 207.34.169.208 at 2016-11-04 04:34:11 +0000
+2016-11-04T04:34:11.537220+00:00 app[web.1]: Processing by WelcomeController#index as HTML
+2016-11-04T04:34:11.551159+00:00 app[web.1]:   Rendered welcome/index.erb within layouts/application (5.3ms)
+2016-11-04T04:34:11.554387+00:00 app[web.1]: Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+2016-11-04T04:35:44.664634+00:00 heroku[router]: at=info method=GET path="/" host=arcane-bastion-59984.herokuapp.com request_id=6327f0f1-eefe-48e0-b8fe-a815f35508e9 fwd="207.34.169.208" dyno=web.1 connect=1ms service=26ms status=200 bytes=8207
+2016-11-04T04:35:44.633816+00:00 app[web.1]: Started GET "/" for 207.34.169.208 at 2016-11-04 04:35:44 +0000
+2016-11-04T04:35:44.644516+00:00 app[web.1]: Processing by WelcomeController#index as HTML
+2016-11-04T04:35:44.645639+00:00 app[web.1]:   Rendered welcome/index.erb within layouts/application (0.1ms)
+2016-11-04T04:35:44.655436+00:00 app[web.1]: Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+2016-11-04T04:35:44.796925+00:00 heroku[router]: at=info method=GET path="/assets/application-65b06790c910bd8b6e026af00c16cb539012b9dcab62fc2b7effa7d9b2655b44.js" host=arcane-bastion-59984.herokuapp.com request_id=d03b37cf-2502-476f-96fc-9b3c4ceac9b3 fwd="207.34.169.208" dyno=web.1 connect=1ms service=6ms status=200 bytes=43830
+2016-11-04T04:35:44.971638+00:00 heroku[router]: at=info method=GET path="/assets/application-c7658338ecbdf8a2f4d146b5e4cd5ff0367a7c491c4270a505c32d2876b35d12.css" host=arcane-bastion-59984.herokuapp.com request_id=0b1c54d4-f786-47db-8809-6c896e7adfdd fwd="207.34.169.208" dyno=web.1 connect=1ms service=3ms status=200 bytes=788
+2016-11-04T04:35:46.018921+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-bastion-59984.herokuapp.com request_id=78d43706-dd73-4e3b-b977-fb63593044aa fwd="207.34.169.208" dyno=web.1 connect=1ms service=3ms status=200 bytes=143
+2016-11-04T04:35:48.656932+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=069593e3-56a9-4f04-bb8b-a680d7151649 fwd="207.34.169.208" dyno=web.1 connect=1ms service=59ms status=404 bytes=1744
+2016-11-04T04:35:48.595359+00:00 app[web.1]: Started GET "/tokimons" for 207.34.169.208 at 2016-11-04 04:35:48 +0000
+2016-11-04T04:35:48.601318+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-04T04:35:48.636281+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (23.0ms)
+2016-11-04T04:35:48.636560+00:00 app[web.1]: Completed 500 Internal Server Error in 35ms (ActiveRecord: 19.2ms)
+2016-11-04T04:35:48.638174+00:00 app[web.1]: 
+2016-11-04T04:35:48.638175+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-04T04:35:48.638177+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb___2023112830380590175_69815621996060'
+2016-11-04T04:35:48.638178+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb___2023112830380590175_69815621996060'
+2016-11-04T04:35:48.638178+00:00 app[web.1]: 
+2016-11-04T04:35:48.638179+00:00 app[web.1]: 
+2016-11-04T04:35:52.941090+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=7325aee3-7dd2-4f43-8d17-7da34d891443 fwd="207.34.169.208" dyno=web.1 connect=1ms service=34ms status=404 bytes=1744
+2016-11-04T04:35:52.903696+00:00 app[web.1]: Started GET "/tokimons" for 207.34.169.208 at 2016-11-04 04:35:52 +0000
+2016-11-04T04:35:52.908515+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-04T04:35:52.925555+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (15.7ms)
+2016-11-04T04:35:52.925763+00:00 app[web.1]: Completed 500 Internal Server Error in 17ms (ActiveRecord: 11.8ms)
+2016-11-04T04:35:52.933370+00:00 app[web.1]: 
+2016-11-04T04:35:52.933372+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-04T04:35:52.933374+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb___2023112830380590175_69815621996060'
+2016-11-04T04:35:52.933375+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb___2023112830380590175_69815621996060'
+2016-11-04T04:35:52.933375+00:00 app[web.1]: 
+2016-11-04T04:35:52.933376+00:00 app[web.1]: 
+2016-11-04T04:35:57.772552+00:00 heroku[router]: at=info method=GET path="/trainers" host=arcane-bastion-59984.herokuapp.com request_id=09c74809-a3b7-48f0-8168-da987a644e9f fwd="207.34.169.208" dyno=web.1 connect=1ms service=70ms status=200 bytes=4955
+2016-11-04T04:35:57.697631+00:00 app[web.1]: Started GET "/trainers" for 207.34.169.208 at 2016-11-04 04:35:57 +0000
+2016-11-04T04:35:57.709321+00:00 app[web.1]: Processing by TrainersController#index as HTML
+2016-11-04T04:35:57.757001+00:00 app[web.1]:   Rendered trainers/index.html.erb within layouts/application (25.7ms)
+2016-11-04T04:35:57.761663+00:00 app[web.1]: Completed 200 OK in 52ms (Views: 43.7ms | ActiveRecord: 2.0ms)
+2016-11-04T04:36:12.133764+00:00 heroku[router]: at=info method=GET path="/trainers" host=arcane-bastion-59984.herokuapp.com request_id=1f6f211c-cc39-4efc-98df-62c3ca5dd622 fwd="207.34.169.208" dyno=web.1 connect=1ms service=23ms status=200 bytes=4955
+2016-11-04T04:36:12.111944+00:00 app[web.1]: Started GET "/trainers" for 207.34.169.208 at 2016-11-04 04:36:12 +0000
+2016-11-04T04:36:12.116046+00:00 app[web.1]: Processing by TrainersController#index as HTML
+2016-11-04T04:36:12.123996+00:00 app[web.1]:   Rendered trainers/index.html.erb within layouts/application (6.7ms)
+2016-11-04T04:36:12.125272+00:00 app[web.1]: Completed 200 OK in 9ms (Views: 3.8ms | ActiveRecord: 4.4ms)
+2016-11-04T04:36:34.354661+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=34b4a3fd-dadb-4b8c-ae54-50cfeb91463c fwd="207.34.169.208" dyno=web.1 connect=1ms service=64ms status=404 bytes=1744
+2016-11-04T04:36:34.291253+00:00 app[web.1]: Started GET "/tokimons" for 207.34.169.208 at 2016-11-04 04:36:34 +0000
+2016-11-04T04:36:34.295592+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-04T04:36:34.331145+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (33.8ms)
+2016-11-04T04:36:34.333894+00:00 app[web.1]: 
+2016-11-04T04:36:34.331948+00:00 app[web.1]: Completed 500 Internal Server Error in 36ms (ActiveRecord: 17.3ms)
+2016-11-04T04:36:34.333896+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-04T04:36:34.333897+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb___2023112830380590175_69815621832880'
+2016-11-04T04:36:34.333898+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb___2023112830380590175_69815621832880'
+2016-11-04T04:36:34.333899+00:00 app[web.1]: 
+2016-11-04T04:36:34.333899+00:00 app[web.1]: 
+2016-11-04T04:36:39.827017+00:00 heroku[router]: at=info method=GET path="/" host=arcane-bastion-59984.herokuapp.com request_id=f4e64e68-7b3d-4aa8-be2f-d1da20e4e608 fwd="207.34.169.208" dyno=web.1 connect=1ms service=16ms status=200 bytes=8207
+2016-11-04T04:36:39.807574+00:00 app[web.1]: Started GET "/" for 207.34.169.208 at 2016-11-04 04:36:39 +0000
+2016-11-04T04:36:39.811265+00:00 app[web.1]: Processing by WelcomeController#index as HTML
+2016-11-04T04:36:39.814373+00:00 app[web.1]:   Rendered welcome/index.erb within layouts/application (0.3ms)
+2016-11-04T04:36:39.817350+00:00 app[web.1]: Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+2016-11-04T04:36:41.316387+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=4a674987-844e-4846-86a8-566b8d53f501 fwd="207.34.169.208" dyno=web.1 connect=1ms service=43ms status=404 bytes=1744
+2016-11-04T04:36:41.272427+00:00 app[web.1]: Started GET "/tokimons" for 207.34.169.208 at 2016-11-04 04:36:41 +0000
+2016-11-04T04:36:41.277516+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-04T04:36:41.304644+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (22.3ms)
+2016-11-04T04:36:41.305418+00:00 app[web.1]: Completed 500 Internal Server Error in 28ms (ActiveRecord: 7.3ms)
+2016-11-04T04:36:41.308405+00:00 app[web.1]: 
+2016-11-04T04:36:41.308409+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb___2023112830380590175_69815621996060'
+2016-11-04T04:36:41.308407+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-04T04:36:41.308410+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb___2023112830380590175_69815621996060'
+2016-11-04T04:36:41.308411+00:00 app[web.1]: 
+2016-11-04T04:36:41.308411+00:00 app[web.1]: 
+2016-11-04T04:36:48.509925+00:00 heroku[router]: at=info method=GET path="/trainers" host=arcane-bastion-59984.herokuapp.com request_id=cbeb4b48-ac09-42e9-a68f-ff0390c8c44b fwd="207.34.169.208" dyno=web.1 connect=1ms service=27ms status=200 bytes=4955
+2016-11-04T04:36:48.479682+00:00 app[web.1]: Started GET "/trainers" for 207.34.169.208 at 2016-11-04 04:36:48 +0000
+2016-11-04T04:36:48.484048+00:00 app[web.1]: Processing by TrainersController#index as HTML
+2016-11-04T04:36:48.501604+00:00 app[web.1]: Completed 200 OK in 18ms (Views: 3.5ms | ActiveRecord: 13.2ms)
+2016-11-04T04:36:48.500549+00:00 app[web.1]:   Rendered trainers/index.html.erb within layouts/application (15.0ms)
+2016-11-04T04:36:56.348025+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=36c31c73-e8d9-4122-9ff8-fe4c7175fbc0 fwd="207.34.169.208" dyno=web.1 connect=1ms service=25ms status=404 bytes=1744
+2016-11-04T04:36:56.317459+00:00 app[web.1]: Started GET "/tokimons" for 207.34.169.208 at 2016-11-04 04:36:56 +0000
+2016-11-04T04:36:56.324844+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-04T04:36:56.338501+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (7.4ms)
+2016-11-04T04:36:56.338816+00:00 app[web.1]: Completed 500 Internal Server Error in 9ms (ActiveRecord: 4.9ms)
+2016-11-04T04:36:56.340473+00:00 app[web.1]: 
+2016-11-04T04:36:56.340475+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-04T04:36:56.340476+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb___2023112830380590175_69815621996060'
+2016-11-04T04:36:56.340477+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb___2023112830380590175_69815621996060'
+2016-11-04T04:36:56.340478+00:00 app[web.1]: 
+2016-11-04T04:36:56.340478+00:00 app[web.1]: 
+2016-11-04T04:37:05.234292+00:00 heroku[router]: at=info method=GET path="/trainers" host=arcane-bastion-59984.herokuapp.com request_id=3b694184-503e-4133-a09c-b2ae3665d9b8 fwd="207.34.169.208" dyno=web.1 connect=2ms service=106ms status=200 bytes=4955
+2016-11-04T04:37:05.126532+00:00 app[web.1]: Started GET "/trainers" for 207.34.169.208 at 2016-11-04 04:37:05 +0000
+2016-11-04T04:37:05.179691+00:00 app[web.1]: Processing by TrainersController#index as HTML
+2016-11-04T04:37:05.212582+00:00 app[web.1]:   Rendered trainers/index.html.erb within layouts/application (15.7ms)
+2016-11-04T04:37:05.225531+00:00 app[web.1]: Completed 200 OK in 46ms (Views: 28.4ms | ActiveRecord: 13.2ms)
+2016-11-04T04:37:41.789300+00:00 heroku[router]: at=info method=GET path="/" host=arcane-bastion-59984.herokuapp.com request_id=4d7e3dd7-6201-445f-bb82-f20625f19aec fwd="207.34.169.208" dyno=web.1 connect=1ms service=16ms status=200 bytes=8207
+2016-11-04T04:37:41.759343+00:00 app[web.1]: Started GET "/" for 207.34.169.208 at 2016-11-04 04:37:41 +0000
+2016-11-04T04:37:41.764708+00:00 app[web.1]:   Rendered welcome/index.erb within layouts/application (0.1ms)
+2016-11-04T04:37:41.763636+00:00 app[web.1]: Processing by WelcomeController#index as HTML
+2016-11-04T04:37:41.766273+00:00 app[web.1]: Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+2016-11-04T04:37:42.566124+00:00 heroku[router]: at=info method=GET path="/apple-touch-icon-120x120-precomposed.png" host=arcane-bastion-59984.herokuapp.com request_id=6c104344-0303-4523-8117-f39b0efe8fbd fwd="207.34.169.208" dyno=web.1 connect=1ms service=17ms status=404 bytes=1744
+2016-11-04T04:37:42.542661+00:00 app[web.1]: Started GET "/apple-touch-icon-120x120-precomposed.png" for 207.34.169.208 at 2016-11-04 04:37:42 +0000
+2016-11-04T04:37:42.548370+00:00 app[web.1]: 
+2016-11-04T04:37:42.548374+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-120x120-precomposed.png"):
+2016-11-04T04:37:42.548378+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2016-11-04T04:37:42.548378+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+2016-11-04T04:37:42.548380+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+2016-11-04T04:37:42.548381+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+2016-11-04T04:37:42.548381+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+2016-11-04T04:37:42.548382+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+2016-11-04T04:37:42.548382+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+2016-11-04T04:37:42.548383+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+2016-11-04T04:37:42.548384+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+2016-11-04T04:37:42.548384+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+2016-11-04T04:37:42.548385+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+2016-11-04T04:37:42.548386+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+2016-11-04T04:37:42.548386+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+2016-11-04T04:37:42.548387+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+2016-11-04T04:37:42.548388+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+2016-11-04T04:37:42.548388+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+2016-11-04T04:37:42.548389+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+2016-11-04T04:37:42.548389+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+2016-11-04T04:37:42.548390+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+2016-11-04T04:37:42.548391+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+2016-11-04T04:37:42.548391+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `call'
+2016-11-04T04:37:42.548392+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+2016-11-04T04:37:42.548392+00:00 app[web.1]: 
+2016-11-04T04:37:42.548393+00:00 app[web.1]: 
+2016-11-04T04:37:42.909518+00:00 heroku[router]: at=info method=GET path="/apple-touch-icon-120x120.png" host=arcane-bastion-59984.herokuapp.com request_id=960e5a03-7f4f-4200-9307-4789a83953ca fwd="207.34.169.208" dyno=web.1 connect=1ms service=11ms status=404 bytes=1744
+2016-11-04T04:37:42.883838+00:00 app[web.1]: Started GET "/apple-touch-icon-120x120.png" for 207.34.169.208 at 2016-11-04 04:37:42 +0000
+2016-11-04T04:37:42.892047+00:00 app[web.1]: 
+2016-11-04T04:37:42.892050+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-120x120.png"):
+2016-11-04T04:37:42.892051+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2016-11-04T04:37:42.892052+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+2016-11-04T04:37:42.892053+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+2016-11-04T04:37:42.892054+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+2016-11-04T04:37:42.892054+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+2016-11-04T04:37:42.892055+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+2016-11-04T04:37:42.892056+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+2016-11-04T04:37:42.892057+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+2016-11-04T04:37:42.892057+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+2016-11-04T04:37:42.892058+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+2016-11-04T04:37:42.892059+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+2016-11-04T04:37:42.892060+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+2016-11-04T04:37:42.892061+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+2016-11-04T04:37:42.892062+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+2016-11-04T04:37:42.892063+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+2016-11-04T04:37:42.892063+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+2016-11-04T04:37:42.892064+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+2016-11-04T04:37:42.892065+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+2016-11-04T04:37:42.892065+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+2016-11-04T04:37:42.892067+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `call'
+2016-11-04T04:37:42.892066+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+2016-11-04T04:37:42.892068+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+2016-11-04T04:37:42.892069+00:00 app[web.1]: 
+2016-11-04T04:37:42.892069+00:00 app[web.1]: 
+2016-11-04T04:37:43.027225+00:00 app[web.1]: Started GET "/apple-touch-icon.png" for 207.34.169.208 at 2016-11-04 04:37:43 +0000
+2016-11-04T04:37:43.031356+00:00 app[web.1]: 
+2016-11-04T04:37:43.031358+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+2016-11-04T04:37:43.031360+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2016-11-04T04:37:43.031361+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+2016-11-04T04:37:43.031361+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+2016-11-04T04:37:43.031362+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+2016-11-04T04:37:43.031363+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+2016-11-04T04:37:43.031364+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+2016-11-04T04:37:43.031364+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+2016-11-04T04:37:43.031365+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+2016-11-04T04:37:43.031366+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+2016-11-04T04:37:43.031367+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+2016-11-04T04:37:43.031368+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+2016-11-04T04:37:43.031369+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+2016-11-04T04:37:43.031369+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+2016-11-04T04:37:43.031371+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+2016-11-04T04:37:43.031370+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+2016-11-04T04:37:43.031372+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+2016-11-04T04:37:43.031372+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+2016-11-04T04:37:43.031373+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+2016-11-04T04:37:43.031375+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+2016-11-04T04:37:43.031377+00:00 app[web.1]: 
+2016-11-04T04:37:43.031377+00:00 app[web.1]: 
+2016-11-04T04:37:43.031374+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+2016-11-04T04:37:43.031375+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `call'
+2016-11-04T04:37:43.031376+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+2016-11-04T04:37:43.048886+00:00 heroku[router]: at=info method=GET path="/apple-touch-icon.png" host=arcane-bastion-59984.herokuapp.com request_id=44a9a758-a168-4e66-894d-e8969ef10fa0 fwd="207.34.169.208" dyno=web.1 connect=1ms service=6ms status=404 bytes=1744
+2016-11-04T04:37:43.162819+00:00 heroku[router]: at=info method=GET path="/apple-touch-icon.png" host=arcane-bastion-59984.herokuapp.com request_id=6435ceb7-a541-4b81-ac37-cf3da4dfee74 fwd="207.34.169.208" dyno=web.1 connect=1ms service=6ms status=404 bytes=1744
+2016-11-04T04:37:43.142367+00:00 app[web.1]: Started GET "/apple-touch-icon.png" for 207.34.169.208 at 2016-11-04 04:37:43 +0000
+2016-11-04T04:37:43.145370+00:00 app[web.1]: 
+2016-11-04T04:37:43.145373+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+2016-11-04T04:37:43.145374+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2016-11-04T04:37:43.145375+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+2016-11-04T04:37:43.265467+00:00 heroku[router]: at=info method=GET path="/apple-touch-icon-precomposed.png" host=arcane-bastion-59984.herokuapp.com request_id=01d11338-a9bb-4569-b954-8c284f99b52d fwd="207.34.169.208" dyno=web.1 connect=2ms service=10ms status=404 bytes=1744
+2016-11-04T04:37:43.145375+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+2016-11-04T04:37:43.145376+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+2016-11-04T04:37:43.145377+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+2016-11-04T04:37:43.145378+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+2016-11-04T04:37:43.145379+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+2016-11-04T04:37:43.145379+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+2016-11-04T04:37:43.145380+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+2016-11-04T04:37:43.145381+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+2016-11-04T04:37:43.145382+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+2016-11-04T04:37:43.145382+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+2016-11-04T04:37:43.145383+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+2016-11-04T04:37:43.145384+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+2016-11-04T04:37:43.145384+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+2016-11-04T04:37:43.145385+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+2016-11-04T04:37:43.145386+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+2016-11-04T04:37:43.145387+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+2016-11-04T04:37:43.145388+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+2016-11-04T04:37:43.145388+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+2016-11-04T04:37:43.145390+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+2016-11-04T04:37:43.145391+00:00 app[web.1]: 
+2016-11-04T04:37:43.145389+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `call'
+2016-11-04T04:37:43.145391+00:00 app[web.1]: 
+2016-11-04T04:37:43.241904+00:00 app[web.1]: Started GET "/apple-touch-icon-precomposed.png" for 207.34.169.208 at 2016-11-04 04:37:43 +0000
+2016-11-04T04:37:43.247966+00:00 app[web.1]: 
+2016-11-04T04:37:43.247969+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+2016-11-04T04:37:43.247971+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2016-11-04T04:37:43.247972+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+2016-11-04T04:37:43.247972+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+2016-11-04T04:37:43.247973+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+2016-11-04T04:37:43.247974+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+2016-11-04T04:37:43.247974+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+2016-11-04T04:37:43.247975+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+2016-11-04T04:37:43.247976+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+2016-11-04T04:37:43.247977+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+2016-11-04T04:37:43.247977+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+2016-11-04T04:37:43.247979+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+2016-11-04T04:37:43.247979+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+2016-11-04T04:37:43.247980+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+2016-11-04T04:37:43.247981+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+2016-11-04T04:37:43.247982+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+2016-11-04T04:37:43.247982+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+2016-11-04T04:37:43.247983+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+2016-11-04T04:37:43.247983+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+2016-11-04T04:37:43.247984+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+2016-11-04T04:37:43.247985+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+2016-11-04T04:37:43.247985+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `call'
+2016-11-04T04:37:43.247986+00:00 app[web.1]:   vendor/bundle/ruby/2.2.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+2016-11-04T04:37:43.247987+00:00 app[web.1]: 
+2016-11-04T04:37:43.247987+00:00 app[web.1]: 
+2016-11-04T04:37:43.359080+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-bastion-59984.herokuapp.com request_id=5ca444a0-8da6-4c57-9e3a-560bbcb67612 fwd="207.34.169.208" dyno=web.1 connect=1ms service=2ms status=200 bytes=143
+2016-11-04T05:09:17.479908+00:00 heroku[web.1]: Idling
+2016-11-04T05:09:17.480706+00:00 heroku[web.1]: State changed from up to down
+2016-11-04T05:09:21.939018+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-11-04T05:09:23.179011+00:00 app[web.1]: [3] === puma shutdown: 2016-11-04 05:09:23 +0000 ===
+2016-11-04T05:09:23.179019+00:00 app[web.1]: [3] - Goodbye!
+2016-11-04T05:09:22.970981+00:00 app[web.1]: [3] - Gracefully shutting down workers...
+2016-11-04T05:09:23.437575+00:00 heroku[web.1]: Process exited with status 0
+2016-11-04T17:49:34.375504+00:00 heroku[web.1]: Unidling
+2016-11-04T17:49:34.375768+00:00 heroku[web.1]: State changed from down to starting
+2016-11-04T17:49:36.854782+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2016-11-04T17:49:39.610295+00:00 app[web.1]: [3] Puma starting in cluster mode...
+2016-11-04T17:49:39.610313+00:00 app[web.1]: [3] * Version 3.6.0 (ruby 2.2.4-p230), codename: Sleepy Sunday Serenity
+2016-11-04T17:49:39.610313+00:00 app[web.1]: [3] * Min threads: 5, max threads: 5
+2016-11-04T17:49:39.610314+00:00 app[web.1]: [3] * Environment: production
+2016-11-04T17:49:39.610315+00:00 app[web.1]: [3] * Preloading application
+2016-11-04T17:49:39.610315+00:00 app[web.1]: [3] * Process workers: 2
+2016-11-04T17:49:41.157783+00:00 heroku[web.1]: State changed from starting to up
+2016-11-04T17:49:41.089997+00:00 app[web.1]: [3] * Listening on tcp://0.0.0.0:8102
+2016-11-04T17:49:41.090208+00:00 app[web.1]: [3] Use Ctrl-C to stop
+2016-11-04T17:49:41.095200+00:00 app[web.1]: [3] - Worker 0 (pid: 6) booted, phase: 0
+2016-11-04T17:49:41.096964+00:00 app[web.1]: [3] - Worker 1 (pid: 10) booted, phase: 0
+2016-11-04T17:49:41.563708+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=7cd03b58-8dfa-493f-9639-7ea93b0d23e1 fwd="142.58.35.247" dyno=web.1 connect=1ms service=131ms status=404 bytes=1744
+2016-11-04T17:49:41.452737+00:00 app[web.1]: Started GET "/tokimons" for 142.58.35.247 at 2016-11-04 17:49:41 +0000
+2016-11-04T17:49:41.576405+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (48.2ms)
+2016-11-04T17:49:41.576685+00:00 app[web.1]: Completed 500 Internal Server Error in 65ms (ActiveRecord: 17.0ms)
+2016-11-04T17:49:41.511719+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-04T17:49:41.578394+00:00 app[web.1]: 
+2016-11-04T17:49:41.578397+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb__3405621898261435856_69951036984080'
+2016-11-04T17:49:41.578396+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-04T17:49:41.578398+00:00 app[web.1]: 
+2016-11-04T17:49:41.578398+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb__3405621898261435856_69951036984080'
+2016-11-04T17:49:41.578399+00:00 app[web.1]: 
+2016-11-04T18:25:37.756092+00:00 heroku[web.1]: Idling
+2016-11-04T18:25:37.756693+00:00 heroku[web.1]: State changed from up to down
+2016-11-04T18:25:42.164479+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-11-04T18:25:43.074023+00:00 app[web.1]: [3] - Gracefully shutting down workers...
+2016-11-04T18:25:43.461654+00:00 app[web.1]: [3] - Goodbye!
+2016-11-04T18:25:43.461638+00:00 app[web.1]: [3] === puma shutdown: 2016-11-04 18:25:43 +0000 ===
+2016-11-04T18:25:43.782339+00:00 heroku[web.1]: Process exited with status 0
+2016-11-04T18:58:17.656503+00:00 heroku[web.1]: Unidling
+2016-11-04T18:58:17.656720+00:00 heroku[web.1]: State changed from down to starting
+2016-11-04T18:58:20.362486+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2016-11-04T18:58:22.546958+00:00 app[web.1]: [3] Puma starting in cluster mode...
+2016-11-04T18:58:22.546978+00:00 app[web.1]: [3] * Version 3.6.0 (ruby 2.2.4-p230), codename: Sleepy Sunday Serenity
+2016-11-04T18:58:22.546979+00:00 app[web.1]: [3] * Min threads: 5, max threads: 5
+2016-11-04T18:58:22.546980+00:00 app[web.1]: [3] * Environment: production
+2016-11-04T18:58:22.546980+00:00 app[web.1]: [3] * Process workers: 2
+2016-11-04T18:58:22.546981+00:00 app[web.1]: [3] * Preloading application
+2016-11-04T18:58:23.948921+00:00 app[web.1]: [3] * Listening on tcp://0.0.0.0:22683
+2016-11-04T18:58:23.949089+00:00 app[web.1]: [3] Use Ctrl-C to stop
+2016-11-04T18:58:23.953531+00:00 app[web.1]: [3] - Worker 0 (pid: 6) booted, phase: 0
+2016-11-04T18:58:23.955091+00:00 app[web.1]: [3] - Worker 1 (pid: 10) booted, phase: 0
+2016-11-04T18:58:24.497103+00:00 heroku[web.1]: State changed from starting to up
+2016-11-04T18:58:25.802224+00:00 heroku[router]: at=info method=GET path="/" host=arcane-bastion-59984.herokuapp.com request_id=9c7d77ea-4453-4693-aefb-b121cb83cb33 fwd="142.58.35.247" dyno=web.1 connect=1ms service=56ms status=200 bytes=8207
+2016-11-04T18:58:25.749348+00:00 app[web.1]: Started GET "/" for 142.58.35.247 at 2016-11-04 18:58:25 +0000
+2016-11-04T18:58:25.797607+00:00 app[web.1]:   Rendered welcome/index.erb within layouts/application (0.7ms)
+2016-11-04T18:58:25.784594+00:00 app[web.1]: Processing by WelcomeController#index as HTML
+2016-11-04T18:58:25.799724+00:00 app[web.1]: Completed 200 OK in 15ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+2016-11-04T18:58:25.912062+00:00 heroku[router]: at=info method=GET path="/assets/application-65b06790c910bd8b6e026af00c16cb539012b9dcab62fc2b7effa7d9b2655b44.js" host=arcane-bastion-59984.herokuapp.com request_id=6dc09a1b-effc-4f52-a66a-be7da69aad66 fwd="142.58.35.247" dyno=web.1 connect=0ms service=4ms status=200 bytes=43830
+2016-11-04T18:58:26.060993+00:00 heroku[router]: at=info method=GET path="/assets/application-c7658338ecbdf8a2f4d146b5e4cd5ff0367a7c491c4270a505c32d2876b35d12.css" host=arcane-bastion-59984.herokuapp.com request_id=fbfc57c5-3768-4764-b870-90f1b302e26a fwd="142.58.35.247" dyno=web.1 connect=1ms service=1ms status=200 bytes=788
+2016-11-04T18:58:26.549052+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-bastion-59984.herokuapp.com request_id=82bee0e2-26a6-47aa-bfd8-687bc86fe311 fwd="142.58.35.247" dyno=web.1 connect=0ms service=1ms status=200 bytes=143
+2016-11-04T18:58:35.782113+00:00 heroku[router]: at=info method=GET path="/trainers" host=arcane-bastion-59984.herokuapp.com request_id=ed69922e-8846-4e36-a2b0-c8b5bb3d875f fwd="142.58.35.247" dyno=web.1 connect=1ms service=128ms status=200 bytes=4955
+2016-11-04T18:58:35.658525+00:00 app[web.1]: Started GET "/trainers" for 142.58.35.247 at 2016-11-04 18:58:35 +0000
+2016-11-04T18:58:35.735393+00:00 app[web.1]: Processing by TrainersController#index as HTML
+2016-11-04T18:58:35.776925+00:00 app[web.1]:   Rendered trainers/index.html.erb within layouts/application (17.5ms)
+2016-11-04T18:58:35.779450+00:00 app[web.1]: Completed 200 OK in 44ms (Views: 20.3ms | ActiveRecord: 5.8ms)
+2016-11-04T18:58:38.918045+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=1852c3e2-d0b6-42fe-9f63-8c38feeda221 fwd="142.58.35.247" dyno=web.1 connect=0ms service=108ms status=404 bytes=1744
+2016-11-04T18:58:38.811402+00:00 app[web.1]: Started GET "/tokimons" for 142.58.35.247 at 2016-11-04 18:58:38 +0000
+2016-11-04T18:58:38.818944+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-04T18:58:38.914726+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (88.4ms)
+2016-11-04T18:58:38.914969+00:00 app[web.1]: Completed 500 Internal Server Error in 96ms (ActiveRecord: 9.8ms)
+2016-11-04T18:58:38.916532+00:00 app[web.1]: 
+2016-11-04T18:58:38.916533+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-04T18:58:38.916534+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb__3524978665615861529_69833535165140'
+2016-11-04T18:58:38.916535+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb__3524978665615861529_69833535165140'
+2016-11-04T18:58:38.916536+00:00 app[web.1]: 
+2016-11-04T18:58:38.916536+00:00 app[web.1]: 
+2016-11-04T19:33:40.389016+00:00 heroku[web.1]: Idling
+2016-11-04T19:33:40.389598+00:00 heroku[web.1]: State changed from up to down
+2016-11-04T19:33:43.720196+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-11-04T19:33:44.542486+00:00 app[web.1]: [3] - Gracefully shutting down workers...
+2016-11-04T19:33:44.689864+00:00 app[web.1]: [3] === puma shutdown: 2016-11-04 19:33:44 +0000 ===
+2016-11-04T19:33:44.689868+00:00 app[web.1]: [3] - Goodbye!
+2016-11-04T19:33:44.853792+00:00 heroku[web.1]: Process exited with status 0
+2016-11-08T00:53:20.478890+00:00 heroku[web.1]: Unidling
+2016-11-08T00:53:20.479183+00:00 heroku[web.1]: State changed from down to starting
+2016-11-08T00:53:23.058877+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2016-11-08T00:53:25.889363+00:00 app[web.1]: [3] Puma starting in cluster mode...
+2016-11-08T00:53:25.889401+00:00 app[web.1]: [3] * Min threads: 5, max threads: 5
+2016-11-08T00:53:25.889400+00:00 app[web.1]: [3] * Version 3.6.0 (ruby 2.2.4-p230), codename: Sleepy Sunday Serenity
+2016-11-08T00:53:25.889401+00:00 app[web.1]: [3] * Environment: production
+2016-11-08T00:53:25.889402+00:00 app[web.1]: [3] * Process workers: 2
+2016-11-08T00:53:25.889404+00:00 app[web.1]: [3] * Preloading application
+2016-11-08T00:53:27.716595+00:00 app[web.1]: [3] * Listening on tcp://0.0.0.0:12606
+2016-11-08T00:53:27.716777+00:00 app[web.1]: [3] Use Ctrl-C to stop
+2016-11-08T00:53:27.721309+00:00 app[web.1]: [3] - Worker 0 (pid: 6) booted, phase: 0
+2016-11-08T00:53:27.722638+00:00 app[web.1]: [3] - Worker 1 (pid: 10) booted, phase: 0
+2016-11-08T00:53:27.994969+00:00 heroku[web.1]: State changed from starting to up
+2016-11-08T00:53:29.621061+00:00 app[web.1]: Started GET "/tokimons" for 142.58.35.24 at 2016-11-08 00:53:29 +0000
+2016-11-08T00:53:29.754944+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-08T00:53:29.926248+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=d216229b-d228-4039-ab88-4981d4db52b9 fwd="142.58.35.24" dyno=web.1 connect=1ms service=307ms status=404 bytes=1744
+2016-11-08T00:53:29.921902+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (150.0ms)
+2016-11-08T00:53:29.922148+00:00 app[web.1]: Completed 500 Internal Server Error in 167ms (ActiveRecord: 122.2ms)
+2016-11-08T00:53:29.923278+00:00 app[web.1]: 
+2016-11-08T00:53:29.923280+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-08T00:53:29.923282+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb__1688029769731985773_69975523819740'
+2016-11-08T00:53:29.923282+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb__1688029769731985773_69975523819740'
+2016-11-08T00:53:29.923283+00:00 app[web.1]: 
+2016-11-08T00:53:29.923284+00:00 app[web.1]: 
+2016-11-08T00:53:30.079670+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-bastion-59984.herokuapp.com request_id=ba329a06-0a95-43d9-9ff3-5a74c47b2c46 fwd="142.58.35.24" dyno=web.1 connect=0ms service=1ms status=200 bytes=143
+2016-11-08T00:54:20.816268+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=0265943c-0f56-48c2-a5ed-ca0fc7255e70 fwd="142.58.35.24" dyno=web.1 connect=0ms service=14ms status=404 bytes=1744
+2016-11-08T00:54:20.800638+00:00 app[web.1]: Started GET "/tokimons" for 142.58.35.24 at 2016-11-08 00:54:20 +0000
+2016-11-08T00:54:20.803929+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-08T00:54:20.811980+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (6.5ms)
+2016-11-08T00:54:20.812141+00:00 app[web.1]: Completed 500 Internal Server Error in 8ms (ActiveRecord: 3.5ms)
+2016-11-08T00:54:20.813677+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-08T00:54:20.813675+00:00 app[web.1]: 
+2016-11-08T00:54:20.813678+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb__1688029769731985773_69975523819740'
+2016-11-08T00:54:20.813679+00:00 app[web.1]: 
+2016-11-08T00:54:20.813678+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb__1688029769731985773_69975523819740'
+2016-11-08T00:54:20.813679+00:00 app[web.1]: 
+2016-11-08T00:57:43.795322+00:00 app[web.1]: Started GET "/tokimons" for 142.58.35.24 at 2016-11-08 00:57:43 +0000
+2016-11-08T00:57:43.978632+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-08T00:57:44.145136+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=640ecbb5-8484-4cef-bdf5-f0eca5497bbf fwd="142.58.35.24" dyno=web.1 connect=0ms service=356ms status=404 bytes=1744
+2016-11-08T00:57:44.133821+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (117.3ms)
+2016-11-08T00:57:44.134133+00:00 app[web.1]: Completed 500 Internal Server Error in 152ms (ActiveRecord: 35.7ms)
+2016-11-08T00:57:44.135950+00:00 app[web.1]: 
+2016-11-08T00:57:44.135952+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-08T00:57:44.135953+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb__1688029769731985773_69975523738640'
+2016-11-08T00:57:44.135954+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb__1688029769731985773_69975523738640'
+2016-11-08T00:57:44.135965+00:00 app[web.1]: 
+2016-11-08T00:57:44.135966+00:00 app[web.1]: 
+2016-11-08T01:30:14.082254+00:00 heroku[web.1]: Idling
+2016-11-08T01:30:14.082892+00:00 heroku[web.1]: State changed from up to down
+2016-11-08T01:30:17.433175+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-11-08T01:30:18.185585+00:00 app[web.1]: [3] - Gracefully shutting down workers...
+2016-11-08T01:30:18.274049+00:00 app[web.1]: [3] === puma shutdown: 2016-11-08 01:30:18 +0000 ===
+2016-11-08T01:30:18.274087+00:00 app[web.1]: [3] - Goodbye!
+2016-11-08T01:30:18.452167+00:00 heroku[web.1]: Process exited with status 0
+2016-11-10T23:52:26.203411+00:00 heroku[web.1]: Unidling
+2016-11-10T23:52:26.203732+00:00 heroku[web.1]: State changed from down to starting
+2016-11-10T23:52:28.623235+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2016-11-10T23:52:30.667306+00:00 app[web.1]: [4] * Process workers: 2
+2016-11-10T23:52:30.667258+00:00 app[web.1]: [4] Puma starting in cluster mode...
+2016-11-10T23:52:30.667275+00:00 app[web.1]: [4] * Version 3.6.0 (ruby 2.2.4-p230), codename: Sleepy Sunday Serenity
+2016-11-10T23:52:30.667276+00:00 app[web.1]: [4] * Min threads: 5, max threads: 5
+2016-11-10T23:52:30.667277+00:00 app[web.1]: [4] * Environment: production
+2016-11-10T23:52:30.667353+00:00 app[web.1]: [4] * Preloading application
+2016-11-10T23:52:32.053236+00:00 app[web.1]: [4] * Listening on tcp://0.0.0.0:50204
+2016-11-10T23:52:32.053415+00:00 app[web.1]: [4] Use Ctrl-C to stop
+2016-11-10T23:52:32.057028+00:00 app[web.1]: [4] - Worker 0 (pid: 7) booted, phase: 0
+2016-11-10T23:52:32.058609+00:00 app[web.1]: [4] - Worker 1 (pid: 11) booted, phase: 0
+2016-11-10T23:52:32.220495+00:00 heroku[web.1]: State changed from starting to up
+2016-11-10T23:52:33.362431+00:00 heroku[router]: at=info method=GET path="/" host=arcane-bastion-59984.herokuapp.com request_id=e8a47db5-7767-4a3d-9725-45637a61ce50 fwd="142.58.35.207" dyno=web.1 connect=1ms service=71ms status=200 bytes=8207
+2016-11-10T23:52:33.295414+00:00 app[web.1]: Started GET "/" for 142.58.35.207 at 2016-11-10 23:52:33 +0000
+2016-11-10T23:52:33.346484+00:00 app[web.1]: Processing by WelcomeController#index as HTML
+2016-11-10T23:52:33.359341+00:00 app[web.1]:   Rendered welcome/index.erb within layouts/application (0.7ms)
+2016-11-10T23:52:33.361399+00:00 app[web.1]: Completed 200 OK in 15ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+2016-11-10T23:52:33.484093+00:00 heroku[router]: at=info method=GET path="/assets/application-65b06790c910bd8b6e026af00c16cb539012b9dcab62fc2b7effa7d9b2655b44.js" host=arcane-bastion-59984.herokuapp.com request_id=1d3cf40f-f4d6-4004-9c27-0fa16b5d9bf9 fwd="142.58.35.207" dyno=web.1 connect=0ms service=2ms status=200 bytes=43830
+2016-11-10T23:52:33.636057+00:00 heroku[router]: at=info method=GET path="/assets/application-c7658338ecbdf8a2f4d146b5e4cd5ff0367a7c491c4270a505c32d2876b35d12.css" host=arcane-bastion-59984.herokuapp.com request_id=55973b0c-6efc-463f-8c3f-ccf5a0580eaa fwd="142.58.35.207" dyno=web.1 connect=0ms service=1ms status=200 bytes=788
+2016-11-10T23:52:33.931671+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-bastion-59984.herokuapp.com request_id=2d70c565-dabf-4cf9-b718-12fc5e34a348 fwd="142.58.35.207" dyno=web.1 connect=2ms service=4ms status=200 bytes=143
+2016-11-10T23:52:36.343134+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-10T23:52:36.305737+00:00 app[web.1]: Started GET "/tokimons" for 142.58.35.207 at 2016-11-10 23:52:36 +0000
+2016-11-10T23:52:36.417303+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb__3872139871110793874_69987496408940'
+2016-11-10T23:52:36.415282+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (57.5ms)
+2016-11-10T23:52:36.417299+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-10T23:52:36.417303+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb__3872139871110793874_69987496408940'
+2016-11-10T23:52:36.415605+00:00 app[web.1]: Completed 500 Internal Server Error in 72ms (ActiveRecord: 33.1ms)
+2016-11-10T23:52:36.417298+00:00 app[web.1]: 
+2016-11-10T23:52:36.417304+00:00 app[web.1]: 
+2016-11-10T23:52:36.417304+00:00 app[web.1]: 
+2016-11-10T23:52:36.417329+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=0968fddc-ff13-4cc2-9d00-539463bb2556 fwd="142.58.35.207" dyno=web.1 connect=0ms service=114ms status=404 bytes=1744
+2016-11-10T23:52:39.463697+00:00 heroku[router]: at=info method=GET path="/trainers" host=arcane-bastion-59984.herokuapp.com request_id=329d007e-9e95-42f5-a4db-81f1ebf2b425 fwd="142.58.35.207" dyno=web.1 connect=0ms service=22ms status=200 bytes=4955
+2016-11-10T23:52:39.446314+00:00 app[web.1]: Processing by TrainersController#index as HTML
+2016-11-10T23:52:39.443347+00:00 app[web.1]: Started GET "/trainers" for 142.58.35.207 at 2016-11-10 23:52:39 +0000
+2016-11-10T23:52:39.460690+00:00 app[web.1]:   Rendered trainers/index.html.erb within layouts/application (9.3ms)
+2016-11-10T23:52:39.463080+00:00 app[web.1]: Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 1.6ms)
+2016-11-10T23:52:47.502542+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=fd4d9847-cfc5-4b91-af8e-a94010c8d79e fwd="142.58.35.207" dyno=web.1 connect=0ms service=9ms status=404 bytes=1744
+2016-11-10T23:52:47.495406+00:00 app[web.1]: Started GET "/tokimons" for 142.58.35.207 at 2016-11-10 23:52:47 +0000
+2016-11-10T23:52:47.497056+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-10T23:52:47.501747+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (3.3ms)
+2016-11-10T23:52:47.501873+00:00 app[web.1]: Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.4ms)
+2016-11-10T23:52:47.502794+00:00 app[web.1]: 
+2016-11-10T23:52:47.502796+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-10T23:52:47.502797+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb__3872139871110793874_69987496408940'
+2016-11-10T23:52:47.502797+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb__3872139871110793874_69987496408940'
+2016-11-10T23:52:47.502798+00:00 app[web.1]: 
+2016-11-10T23:52:47.502798+00:00 app[web.1]: 
+2016-11-10T23:52:57.186709+00:00 heroku[router]: at=info method=GET path="/trainers" host=arcane-bastion-59984.herokuapp.com request_id=c9032f37-8674-47e5-a2e3-4654b40cc6c4 fwd="142.58.35.207" dyno=web.1 connect=0ms service=7ms status=200 bytes=4955
+2016-11-10T23:52:57.181177+00:00 app[web.1]: Started GET "/trainers" for 142.58.35.207 at 2016-11-10 23:52:57 +0000
+2016-11-10T23:52:57.182729+00:00 app[web.1]: Processing by TrainersController#index as HTML
+2016-11-10T23:52:57.185780+00:00 app[web.1]:   Rendered trainers/index.html.erb within layouts/application (2.1ms)
+2016-11-10T23:52:57.186434+00:00 app[web.1]: Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.7ms)
+2016-11-10T23:53:17.943747+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=92d0589d-d308-470d-a639-b9995ef90081 fwd="142.58.35.207" dyno=web.1 connect=0ms service=8ms status=404 bytes=1744
+2016-11-10T23:53:17.937136+00:00 app[web.1]: Started GET "/tokimons" for 142.58.35.207 at 2016-11-10 23:53:17 +0000
+2016-11-10T23:53:17.938736+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-10T23:53:17.942727+00:00 app[web.1]: Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.3ms)
+2016-11-10T23:53:17.942518+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (2.8ms)
+2016-11-10T23:53:17.943584+00:00 app[web.1]: 
+2016-11-10T23:53:17.943585+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-10T23:53:17.943586+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb__3872139871110793874_69987496408940'
+2016-11-10T23:53:17.943586+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb__3872139871110793874_69987496408940'
+2016-11-10T23:53:17.943587+00:00 app[web.1]: 
+2016-11-10T23:53:17.943587+00:00 app[web.1]: 
+2016-11-10T23:56:27.624154+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=be16adcd-60bc-42a0-a2f5-29f9fd4884ee fwd="142.58.35.121" dyno=web.1 connect=1ms service=9ms status=404 bytes=1744
+2016-11-10T23:56:27.612629+00:00 app[web.1]: Started GET "/tokimons" for 142.58.35.121 at 2016-11-10 23:56:27 +0000
+2016-11-10T23:56:27.614142+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-10T23:56:27.617895+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (3.0ms)
+2016-11-10T23:56:27.618049+00:00 app[web.1]: Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.5ms)
+2016-11-10T23:56:27.618917+00:00 app[web.1]: 
+2016-11-10T23:56:27.618919+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-10T23:56:27.618920+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb__3872139871110793874_69987496408940'
+2016-11-10T23:56:27.618921+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb__3872139871110793874_69987496408940'
+2016-11-10T23:56:27.618922+00:00 app[web.1]: 
+2016-11-10T23:56:27.618922+00:00 app[web.1]: 
+2016-11-10T23:56:27.764138+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-bastion-59984.herokuapp.com request_id=67fd7e9b-8fe0-4fdf-91d5-7797d22eabc5 fwd="142.58.35.121" dyno=web.1 connect=1ms service=2ms status=304 bytes=48
+2016-11-10T23:56:39.106790+00:00 heroku[router]: at=info method=GET path="/tokimons" host=arcane-bastion-59984.herokuapp.com request_id=9cfaec02-7cd0-48f7-a347-e69bc98e48a8 fwd="142.58.35.121" dyno=web.1 connect=2ms service=9ms status=404 bytes=1744
+2016-11-10T23:56:39.095039+00:00 app[web.1]: Started GET "/tokimons" for 142.58.35.121 at 2016-11-10 23:56:39 +0000
+2016-11-10T23:56:39.096441+00:00 app[web.1]: Processing by TokimonsController#index as HTML
+2016-11-10T23:56:39.100547+00:00 app[web.1]:   Rendered tokimons/index.html.erb within layouts/application (3.1ms)
+2016-11-10T23:56:39.100659+00:00 app[web.1]: Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.4ms)
+2016-11-10T23:56:39.101705+00:00 app[web.1]: 
+2016-11-10T23:56:39.101706+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=):
+2016-11-10T23:56:39.101708+00:00 app[web.1]:   app/views/tokimons/index.html.erb:40:in `block in _app_views_tokimons_index_html_erb__3872139871110793874_69987496408940'
+2016-11-10T23:56:39.101709+00:00 app[web.1]:   app/views/tokimons/index.html.erb:26:in `_app_views_tokimons_index_html_erb__3872139871110793874_69987496408940'
+2016-11-10T23:56:39.101709+00:00 app[web.1]: 
+2016-11-10T23:56:39.101710+00:00 app[web.1]: 
